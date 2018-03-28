@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+<div class="reveal">
+    <div class="slides">
+
+        {% for slide in page.slides %}
+        <section>
+            {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
+            {% if slide.text %}<p>{{ slide.text }}</p>{% endif %}
+        </section>
+        {% endfor %}
+
+    </div>
+</div>

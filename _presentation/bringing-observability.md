@@ -1,3 +1,6 @@
+---
+layout: slideshow
+title:  "Bringing Observability to the Built Environment at City Scale"
 slides:
   - format: title
     title: Bringing Observability to the Built Environment at City Scale
@@ -10,3 +13,4 @@ slides:
 
   - format: single
     text: 600 employee plant, Fortune 100 company
+---
