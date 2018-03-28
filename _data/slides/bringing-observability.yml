@@ -1,0 +1,12 @@
+slides:
+  - format: title
+    title: Bringing Observability to the Built Environment at City Scale
+
+  - format: sectionbreak
+    title: intro me
+
+  - format: single
+    text: my career started with Industrial IT
+
+  - format: single
+    text: 600 employee plant, Fortune 100 company

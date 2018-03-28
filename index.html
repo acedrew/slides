@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{% for slide_hash in site.data.slides %}
+{% assign slide = slide_hash[1] %}
+
+    {% for slide in slide.slides %}
+
+    <section>
+        {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
+        {% if slide.text %}<p>{{ slide.text }}</p>{% endif %}
+    </section>
+
+    {% endfor %}
+
+{% endfor %}
