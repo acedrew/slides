@@ -2,12 +2,16 @@
 layout: default
 ---
 
-<main>
+<main class="homepage">
 
-    <ul>
+    <ul class="homepage__list">
+
         {% for presentation in site.presentation %}
-        <li><a href="{{ presentation.url }}">{{ presentation.title }}</a></li>
+        <li class="homepage__li">
+            <a class="homepage__a" href="{{ presentation.url }}">{{ presentation.title }}</a>
+        </li>
         {% endfor %}
+
     </ul>
 
 </main>

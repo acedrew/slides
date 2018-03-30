@@ -2,5 +2,16 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+// Color Variables
+
+$navy: #1C213F;
+$red: #F15A50;
+$grey-dark: #535351;
+$grey: #D9D4CC;
+
+// Imports
+
 @import "reveal";
+@import "base";
+@import "homepage";
 @import "theme";

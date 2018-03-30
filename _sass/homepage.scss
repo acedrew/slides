@@ -1,0 +1,58 @@
+// To make this view scrollable we must deal with the body overflow hidden needed for Reveal JS.
+
+.homepage {
+    height: 100%;
+    overflow: auto;
+}
+
+// Homepage List
+
+.homepage__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.homepage__li {
+    flex: 1 1 100px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: $navy;
+    font-size: 30px;
+    font-weight: 600;
+    color: $red;
+
+    &:nth-child(even) {
+        background-color: $red;
+        color: $navy;
+    }
+
+}
+
+.homepage__a {
+    color: inherit;
+    margin-top: 6px; // offset after bottom border height
+
+    &:hover:after {
+        width: 80px;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        margin-top: 2px;
+        width: 0;
+        height: 4px;
+        background-color: $red;
+        transition: width 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+}
+
+.homepage__li:nth-child(even) .homepage__a:after {
+    background-color: $navy;
+}
