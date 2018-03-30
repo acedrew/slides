@@ -5,12 +5,56 @@ layout: default
 <div class="reveal">
     <div class="slides">
 
-        {% for slide in page.slides %}
-        <section>
-            {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
-            {% if slide.text %}<p>{{ slide.text }}</p>{% endif %}
-        </section>
-        {% endfor %}
+    {% for slide in page.slides %}
+        {% if slide.format == "title" %}
+
+            <section class="intro" data-background="{{ site.navy-background }}">
+                {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
+                {% if page.author %}<p>{{ page.author }}</p>{% endif %}
+            </section>
+
+            {% elsif slide.format == "sectionbreak" %}
+
+            <section class="sectionbreak" data-background="{{ site.navy-background }}">
+                {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
+            </section>
+
+            {% elsif slide.format == "single" %}
+
+            <section class="single">
+                {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
+                {% if slide.text %}<p>{{ slide.text }}</p>{% endif %}
+            </section>
+
+            {% elsif slide.format == "thanks" %}
+
+            <section class="thanks">
+                {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
+            </section>
+
+            {% elsif slide.format == "contact" %}
+
+            <section class="contact" data-background="{{ site.navy-background }}">
+                {% if slide.first-name %}<h1>{{ slide.first-name }}<br>{{ slide.last-name }}</h1>{% endif %}
+                <ul>
+                    {% if slide.email %}
+                        <li><a href="mailto:{{ slide.email }}">{{ slide.email }}</a></li>
+                    {% endif %}
+
+                    {% for handle in slide.handles %}
+                        <li>{{ handle }}</li>
+                    {% endfor %}
+                </ul>
+
+                {% if slide.website %}
+                    <p><a href="http://{{ slide.website }}">{{ slide.website }}</a></p>
+                {% endif %}
+
+
+            </section>
+
+        {% endif %}
+    {% endfor %}
 
     </div>
 </div>

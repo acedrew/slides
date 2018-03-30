@@ -1,5 +1,50 @@
 <script src="{{ "/assets/js/reveal.js" | relative_url }}"></script>
 
 <script>
-    Reveal.initialize();
+Reveal.initialize({
+
+    // The "normal" size of the presentation, aspect ratio will be preserved
+	// when the presentation is scaled to fit different resolutions. Can be
+	// specified using percentage units.
+    // Default is 960 x 700
+	width: 1100,
+	height: 700,
+
+    // Vertical centering of slides
+	center: true,
+
+    // Display a presentation progress bar
+    progress: true,
+
+    // Push each slide change to the browser history
+    history: true,
+
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
+
+    // Enable the slide overview mode
+    overview: true,
+
+    // Enables touch navigation on devices with touch input
+    touch: true,
+
+    // Loop the presentation
+    loop: false,
+
+    // Transition style
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+    // Transition speed
+    transitionSpeed: 'default', // default/fast/slow
+
+    // Transition style for full page slide backgrounds
+    backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+    // Number of slides away from the current that are visible
+    viewDistance: 3,
+
+    // The display mode that will be used to show slides
+    display: 'block'
+
+});
 </script>
