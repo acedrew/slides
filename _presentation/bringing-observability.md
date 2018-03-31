@@ -42,6 +42,15 @@ slides:
   - format: single
     text: District of Columbia Department of General Services
 
+  - format: list
+    title: DGS
+    lists:
+      - ~28M ft2 (2.6M m2) building portfolio, valued at ~$40B USD
+      - ~$450M USD annual operating budget, ~$100M spent on energy
+      - established an energy, sustainability and environment division in 2012
+      - progressive city government pushing zero carbon goals
+      - responsibility as an equitable provider of civic services
+
   - format: thanks
     title: Thank You
 
