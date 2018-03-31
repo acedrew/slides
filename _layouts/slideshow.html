@@ -7,6 +7,8 @@ layout: default
 
     {% for slide in page.slides %}
         <section class="{{ slide.format }}" data-background="{{ site.data.slide-templates[slide.format].background | liquify }}">
+        {% include slides/{{ slide.format }}.html %}
+        {% comment %} 
         {% if slide.format == "intro" %}
                 {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
                 {% if page.author %}<p>{{ page.author }}</p>{% endif %}
@@ -51,6 +53,7 @@ layout: default
                 {% endif %}
 
         {% endif %}
+        {% endcomment %} 
         </section>
     {% endfor %}
 
