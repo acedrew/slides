@@ -1,0 +1,9 @@
+---
+intro: 
+    background: '{{ site.navy-background }}'
+sectionbreak:
+    background: '{{ site.navy-background }}'
+list:
+    background: '{{ site.navy-background }}'
+contact:
+    background: '{{ site.navy-background }}'

@@ -3,7 +3,7 @@ layout: slideshow
 title:  "Bringing Observability to the Built Environment at City Scale"
 author: "Andrew Rodgers"
 slides:
-  - format: title
+  - format: intro
     title: Bringing Observability to the Built Environment at City Scale
 
   - format: sectionbreak
