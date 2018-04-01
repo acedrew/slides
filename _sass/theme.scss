@@ -148,6 +148,7 @@ body {
         color: $grey-dark;
 
         &:before {
+            height: 100%;
             content: '';
             position: fixed;
             top: -100vh;
