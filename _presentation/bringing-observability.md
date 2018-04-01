@@ -24,6 +24,10 @@ slides:
   - format: single
     text: actually 67 separate vertically integrated architectures
 
+  - format: list
+
+  - format: single
+
   - format: single
     text: silos...
 
@@ -44,7 +48,7 @@ slides:
 
   - format: list
     title: DGS
-    lists:
+    list:
       - ~28M ft2 (2.6M m2) building portfolio, valued at ~$40B USD
       - ~$450M USD annual operating budget, ~$100M spent on energy
       - established an energy, sustainability and environment division in 2012

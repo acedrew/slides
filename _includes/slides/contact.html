@@ -1,12 +1,10 @@
-                <h1>{{ slide.first-name }}<br>{{ slide.last-name }}</h1>
+<h1>{{ slide.first-name | default: "slide.first-name" }}<br>{{ slide.last-name | default: "slide.last-name" }}</h1>
                 <ul>
-                        <li><a href="mailto:{{ slide.email }}">{{ slide.email }}</a></li>
+                    <li><a href="mailto:{{ slide.email }}">{{ slide.email | default: "slide.email" }}</a></li>
 
                     {% for handle in slide.handles %}
                         <li>{{ handle }}</li>
                     {% endfor %}
                 </ul>
 
-                {% if slide.website %}
-                    <p><a href="http://{{ slide.website }}">{{ slide.website }}</a></p>
-                {% endif %}
+                    <p><a href="http://{{ slide.website }}">{{ slide.website | default: "slide.website" }}</a></p>
