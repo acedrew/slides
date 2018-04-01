@@ -1,6 +1,12 @@
 <h1>{{ slide.title | default: "slide.title"}}</h1>
 <ul>
-    {% for i in (0..4) %}
-        <li>{{ slide.list[i] | default: "slide.list[" | append: i | append: "]" }}</li>
-    {% endfor %}
+    {% unless slide.list %}
+        {% for i in (0..4) %}
+            <li>slide.list[{{ i }}]</li>
+        {% endfor %}
+    {% else %}
+        {% for item in slide.list %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    {% endunless %}
 </ul>
