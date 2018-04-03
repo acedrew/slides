@@ -55,6 +55,56 @@ slides:
       - progressive city government pushing zero carbon goals
       - responsibility as an equitable provider of civic services
 
+  - format: sectionbreak
+    title: ! 'intro: NCE'
+
+  - format: single
+    text: supporting the DC Department of General Services
+
+  - format: single
+    text: energy, sustainability and environment
+
+  - format: single
+    text: data-discovery for troubleshooting
+
+  - format: image
+    image: "/bringing-observability/data-discovery-example.jpg"
+    image-caption: This is an image caption.
+    background-transition: "slide"
+
+  - format: single
+    text: ongoing operational status
+
+  - format: image
+    image: "/bringing-observability/operational-status-example-1.jpg"
+    background-transition: "fade"
+
+  - format: image
+    image: "/bringing-observability/operational-status-example-2.jpg"
+    background-transition: "fade"
+
+  - format: single
+    text: fault detection and alerting
+
+  - format: image
+    image: "/bringing-observability/fault-detection-example.jpg"
+    background-transition: "slide"
+
+  - format: sectionbreak
+    title: what have we accomplished?
+
+  - format: sectionbreak
+    title: what’s next?
+
+  - format: list
+    title: next steps
+    list:
+      - continue to develop business processes around the available data
+      - implement advanced DERMS applications using our technology infrastructure
+      - move toward a constant commissioning reality with continuous improvement
+      - identify new ways to empower our users with data to achieve a sustainable city
+      - integrate other energy resources to deliver virtual power plant solutions
+
   - format: thanks
     title: Thank You
 

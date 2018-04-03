@@ -1,5 +1,5 @@
 ---
-intro: 
+intro:
     background: '{{ site.navy-background }}'
 sectionbreak:
     background: '{{ site.navy-background }}'
@@ -7,3 +7,6 @@ list:
     background: '{{ site.navy-background }}'
 contact:
     background: '{{ site.navy-background }}'
+image:
+    background: '{{ "/assets/img/" | relative_url }}{{ slide.image }}'
+    background-transition: "{{ slide.background-transition }}"
