@@ -8,52 +8,6 @@ layout: default
     {% for slide in page.slides %}
         <section class="{{ slide.format }}" data-background="{{ site.data.slide-templates[slide.format].background | liquify }}" data-background-transition="{{ site.data.slide-templates[slide.format].background-transition | liquify }}">
         {% include slides/{{ slide.format }}.html %}
-        {% comment %}
-        {% if slide.format == "intro" %}
-                {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
-                {% if page.author %}<p>{{ page.author }}</p>{% endif %}
-
-        {% elsif slide.format == "sectionbreak" %}
-
-                {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
-
-        {% elsif slide.format == "single" %}
-
-                {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
-                {% if slide.text %}<p>{{ slide.text }}</p>{% endif %}
-
-        {% elsif slide.format == "thanks" %}
-
-                {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
-
-        {% elsif slide.format == "list" %}
-
-                {% if slide.title %}<h1>{{ slide.title }}</h1>{% endif %}
-                <ul>
-                    {% for list in slide.lists %}
-                        <li>{{ list }}</li>
-                    {% endfor %}
-                </ul>
-
-        {% elsif slide.format == "contact" %}
-
-                {% if slide.first-name %}<h1>{{ slide.first-name }}<br>{{ slide.last-name }}</h1>{% endif %}
-                <ul>
-                    {% if slide.email %}
-                        <li><a href="mailto:{{ slide.email }}">{{ slide.email }}</a></li>
-                    {% endif %}
-
-                    {% for handle in slide.handles %}
-                        <li>{{ handle }}</li>
-                    {% endfor %}
-                </ul>
-
-                {% if slide.website %}
-                    <p><a href="http://{{ slide.website }}">{{ slide.website }}</a></p>
-                {% endif %}
-
-        {% endif %}
-        {% endcomment %}
         </section>
     {% endfor %}
 
