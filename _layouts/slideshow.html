@@ -7,7 +7,12 @@ layout: default
 
     {% for slide in page.slides %}
         <section class="{{ slide.format }}" 
-                 data-background="{{ site.data.slide-templates[slide.format].background | liquify }}" 
+                 {% if slide.image %}
+                     data-background-size="cover"
+                     data-background-size="no-repeat"
+                     data-background-image="{{ "/assets/img/" | relative_url }}{{ slide.image }}" 
+                 {% endif %}
+                 data-background-color="{{ site.data.slide-templates[slide.format].background | liquify }}" 
                  data-background-transition="{{ site.data.slide-templates[slide.format].background-transition | liquify }}">
         {% include slides/{{ slide.format }}.html %}
         <aside class="notes">

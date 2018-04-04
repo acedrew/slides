@@ -8,5 +8,5 @@ list:
 contact:
     background: '{{ site.navy-background }}'
 image:
-    background: '{{ "/assets/img/" | relative_url }}{{ slide.image }}'
+    background: '{{ site.navy-background }}'
     background-transition: "{{ slide.background-transition }}"

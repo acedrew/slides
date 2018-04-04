@@ -234,15 +234,9 @@ body {
 
 .slides .image {
     color: #fff;
-    .text-box {
-        padding: 150px;
-        background: radial-gradient(closest-side ellipse at center, rgba(30,30,30,.5) 30%, rgba(30,30,30,.01) 100%);
-    }
 
     h1 {
         font-size: 110px;
         font-weight: 700;
-        padding: 50px, 150, 50, 150;
-        text-shadow: 0 0 40px rgba(0,0,0,0.10);
     }
 }
