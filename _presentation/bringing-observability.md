@@ -92,6 +92,9 @@ slides:
     image-caption: This is a much longer image caption as a fragment.
     background-transition: "slide"
 
+  - format: image
+    image: "/bringing-observability/application-data-flow.svg"
+
   - format: sectionbreak
     title: what have we accomplished?
 
