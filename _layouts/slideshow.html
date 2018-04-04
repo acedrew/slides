@@ -6,8 +6,13 @@ layout: default
     <div class="slides">
 
     {% for slide in page.slides %}
-        <section class="{{ slide.format }}" data-background="{{ site.data.slide-templates[slide.format].background | liquify }}" data-background-transition="{{ site.data.slide-templates[slide.format].background-transition | liquify }}">
+        <section class="{{ slide.format }}" 
+                 data-background="{{ site.data.slide-templates[slide.format].background | liquify }}" 
+                 data-background-transition="{{ site.data.slide-templates[slide.format].background-transition | liquify }}">
         {% include slides/{{ slide.format }}.html %}
+        <aside class="notes">
+            {{ slide.notes | default:"slide.notes" | liquify }}
+        </aside>
         </section>
     {% endfor %}
 

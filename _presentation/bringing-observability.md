@@ -5,6 +5,7 @@ author: "Andrew Rodgers"
 slides:
   - format: intro
     title: Bringing Observability to the Built Environment at City Scale
+    notes: Don't forget this is an intro
 
   - format: sectionbreak
     title: ! 'intro: me'

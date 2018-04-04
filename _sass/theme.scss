@@ -236,7 +236,7 @@ body {
     color: #fff;
     .text-box {
         padding: 150px;
-        background: radial-gradient(farthest-side ellipse at center, rgba(30,30,30,.6) 20%, rgba(30,30,30,.01) 100%);
+        background: radial-gradient(closest-side ellipse at center, rgba(30,30,30,.5) 30%, rgba(30,30,30,.01) 100%);
     }
 
     h1 {
