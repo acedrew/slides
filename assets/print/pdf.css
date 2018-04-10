@@ -91,13 +91,17 @@ ul, ol, div, p {
 	page-break-after: always;
 }
 
+.reveal .pdf-page:first-of-type section {
+    top: 0 !important;
+}
+
 .reveal .slides section {
 	visibility: visible !important;
-	display: block !important;
+	/* display: block !important; */
 	position: absolute !important;
 
 	margin: 0 !important;
-	padding: 0 !important;
+	/* padding: 0 !important; */
 	box-sizing: border-box !important;
 	min-height: 1px;
 
