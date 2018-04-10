@@ -147,18 +147,6 @@ body {
         list-style-type: none;
         background-color: $grey;
         color: $grey-dark;
-
-        &:before {
-            content: '';
-            position: fixed;
-            top: -100vh;
-            right: -20vw;
-            bottom: -100vh;
-            left: 40%;
-            background-color: $grey;
-            z-index: -1;
-        }
-
     }
 
     li {
@@ -167,19 +155,11 @@ body {
         display: flex;
         align-items: center;
         padding: 0 40px;
-    }
-
-    li:after {
-        content: "";
-        position: absolute;
-        right: -20vw;
-        left: 0;
-        bottom: 0;
         border-bottom: 1px solid #fff;
     }
 
-    li:last-of-type:after {
-        display: none;
+    li:last-of-type {
+        border-bottom: none;
     }
 
 }
