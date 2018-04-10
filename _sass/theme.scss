@@ -46,7 +46,6 @@ body {
  // Base Section Styles
 
 .slide section {
-    font-size: 90px;
     font-weight: 700;
     color: $navy;
     padding: 150px 125px !important;
@@ -95,6 +94,7 @@ body {
 /////////////////////////
 
 .slides .single {
+    font-size: 90px;
     padding: 0 200px !important;
 }
 
