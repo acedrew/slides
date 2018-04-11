@@ -25,10 +25,6 @@ slides:
   - format: single
     text: actually 67 separate vertically integrated architectures
 
-  - format: list
-
-  - format: single
-
   - format: single
     text: silos...
 
@@ -64,6 +60,72 @@ slides:
 
   - format: single
     text: energy, sustainability and environment
+
+  - format: single
+    text: buildsmartdc.com launched in Summer 2013
+
+  - format: single
+    text: provides a unified portal for energy consumption data about the ~400 buildings in the DGS portfolio
+
+  - format: single
+    text: first time a city had achieved near-real-time aggregation of utility data and made it available to public
+
+  - format: sectionbreak
+    title: ! 'intro: VOLTTRONTM™'
+
+  - format: single
+    text: U.S. Department of Energy sponsored OSS platform for “transactional energy”
+
+  - format: single
+    text: framework for distributed sensing and control with sane trust and security defaults
+
+  - format: single
+    text: by researchers for researchers, but with lofty goals of commercial adoption
+
+  - format: sectionbreak
+    title: what we’re building now
+
+  - format: sectionbreak
+    title: intent ≠ state
+
+  - format: single
+    text: an industrial process with a different product in every room, and the product changes multiple times each day
+
+  - format: single
+    text: focus on energy efficiency at the design level encourages adoption of complex systems to achieve efficiency goals
+
+  - format: sectionbreak
+    title: if you don’t see the parallels yet...
+
+  - format: single
+    text: rather than embracing and tackling the complexity head on, market has looked to vendors to hide it
+
+  - format: list
+    title: Our goals
+    list:
+      - define the metrics that drive sustained operational excellence
+      - reduce energy consumption and carbon impact of the built environment
+      - raise the standard for comfort and reliability
+      - develop the workforce that can operate and maintain the building of the future
+      - deliver an aggressive ROI that allows investment in future innovations
+
+  - format: sectionbreak
+    title: the approach
+
+  - format: single
+    text: disaggregate energy and operational data, collect critical operational state from every system
+
+  - format: single
+    text: invest time at the front end in data quality assurance to enable actionable insights at all organizational levels
+
+  - format: single
+    text: support simple operational insights for existing staff while building out infrastructure for advanced analytics
+
+  - format: single
+    text: deliver data and insights to public to ensure accountability and operational excellence is sustained
+
+  - format: sectionbreak
+    title: where we are
 
   - format: single
     title: ! '46'
