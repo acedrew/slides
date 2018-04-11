@@ -46,7 +46,7 @@ slides:
   - format: list
     title: DGS
     list:
-      - ~28M ft2 (2.6M m2) building portfolio, valued at ~$40B USD
+      - ~28M ft² (2.6M m²) building portfolio, valued at ~$40B USD
       - ~$450M USD annual operating budget, ~$100M spent on energy
       - established an energy, sustainability and environment division in 2012
       - progressive city government pushing zero carbon goals
