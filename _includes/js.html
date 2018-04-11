@@ -55,4 +55,15 @@ Reveal.initialize({
     pdfMaxPagesPerSlide: 1
 
 });
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    var slide = event.currentSlide;
+    if (slide.classList.contains('list')) {
+        var title = slide.querySelector("h1");
+        var titlelength = title.innerHTML.length;
+        var textSize = Math.max(345 - titlelength * 25, 90);
+        title.setAttribute("style", "font-size: " + textSize.toString() + "px");
+        console.log(slide.querySelector("h1").innerHTML);
+    }
+        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+} );
 </script>
