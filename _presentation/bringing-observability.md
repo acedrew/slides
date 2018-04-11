@@ -66,6 +66,22 @@ slides:
     text: energy, sustainability and environment
 
   - format: single
+    title: ! '46'
+    text: sites
+
+  - format: single
+    title: ! '>29,700'
+    text: topics
+
+  - format: single
+    title: ! '>2,700,000'
+    text: samples per 24h
+
+  - format: single
+    title: ! '>972.2M'
+    text: total sensor records
+
+  - format: single
     text: data-discovery for troubleshooting
 
   - format: image
@@ -97,6 +113,26 @@ slides:
 
   - format: sectionbreak
     title: what have we accomplished?
+
+  - format: single
+    title: 24
+    text: sites with active programs
+
+  - format: single
+    title: $4M USD
+    text: total savings to date
+
+  - format: single
+    title: $1M USD
+    text: current recurring annual savings
+
+  - format: single
+    title: 20%
+    text: reduction in energy costs at priority sites
+
+  - format: single
+    title: $500K USD
+    text: additional recurring annual savings this fiscal year
 
   - format: sectionbreak
     title: what’s next?

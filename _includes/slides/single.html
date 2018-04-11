@@ -1,1 +1,4 @@
+{% if slide.title %}
+    <h1>{{ slide.title }}</h1>
+{% endif %}
 <p>{{ slide.text | default: "slide.text" }}</p>

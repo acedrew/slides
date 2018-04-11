@@ -94,8 +94,17 @@ body {
 /////////////////////////
 
 .slides .single {
-    font-size: 90px;
-    padding: 0 200px !important;
+    padding: 0!important;
+
+    h1 {
+        font-size: 270px;
+        letter-spacing: 0;
+    }
+
+    p {
+        font-size: 90px;
+        padding: 0 200px;
+    }
 }
 
 /////////////////////////
