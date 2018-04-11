@@ -127,6 +127,15 @@ slides:
   - format: sectionbreak
     title: where we are
 
+  - format: image
+    image: "/bringing-observability/application-data-flow.svg"
+
+  - format: image
+    image: "/bringing-observability/metric-data-flow.svg"
+
+  - format: image
+    image: "/bringing-observability/log-data-flow.svg"
+
   - format: single
     title: ! '46'
     text: sites
@@ -148,7 +157,6 @@ slides:
 
   - format: image
     image: "/bringing-observability/data-discovery-example.jpg"
-    image-caption: This is an image caption.
     background-transition: "slide"
 
   - format: single
@@ -167,11 +175,7 @@ slides:
 
   - format: image
     image: "/bringing-observability/fault-detection-example.jpg"
-    image-caption: This is a much longer image caption as a fragment.
     background-transition: "slide"
-
-  - format: image
-    image: "/bringing-observability/application-data-flow.svg"
 
   - format: sectionbreak
     title: what have we accomplished?
@@ -207,6 +211,12 @@ slides:
       - move toward a constant commissioning reality with continuous improvement
       - identify new ways to empower our users with data to achieve a sustainable city
       - integrate other energy resources to deliver virtual power plant solutions
+
+  - format: single
+    text: deliver observability to the built environment
+
+  - format: single
+    text: build the platform that enables sustainable, responsive management of real estate portfolios
 
   - format: thanks
     title: Thank You
