@@ -8,6 +8,10 @@ slides:
 
   - format: single
 
+  - format: single-topbar
+
+  - format: single-split
+
   - format: list
 
   - format: image
