@@ -115,7 +115,6 @@ body {
     display: flex !important;
     padding: 0 !important;
     flex-direction: column;
-    align-content: stretch;
     height: 100%;
 
     .top-bar {
@@ -144,6 +143,40 @@ body {
         padding: 0 170px;
         padding-bottom: 100px; // offset vertical center
         background-color: $red;
+    }
+
+}
+
+/////////////////////////
+// Single Slide Split
+/////////////////////////
+
+.slides .single-split {
+    display: flex !important;
+    padding: 0 !important;
+    flex-direction: column;
+    height: 100%;
+
+    hgroup {
+        flex: 1 0 50%;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        font-size: 90px;
+        color: $red;
+        padding: 0 170px;
+        background-color: $navy;
+
+        h1 {
+            width: 100%;
+        }
+
+    }
+
+    hgroup + hgroup {
+        background-color: $red;
+        color: $navy;
     }
 
 }

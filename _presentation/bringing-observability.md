@@ -109,6 +109,10 @@ slides:
   - format: sectionbreak
     title: if you don’t see the parallels yet...
 
+  - format: single-split
+    title: system designers rarely connect with system operators
+    text: facilities staff are operating systems without understanding the design intentions
+
   - format: single
     text: rather than embracing and tackling the complexity head on, market has looked to vendors to hide it
 
