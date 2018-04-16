@@ -65,6 +65,23 @@ slides:
   - format: single
     text: energy, sustainability and environment
 
+  - format: list-step
+    title: |
+        BUILDSMART DC:
+        More data.
+        <strong>Less Carbon.</strong>
+        Zero Excuses.
+    list:
+      - |
+        Design
+        Excellence
+      - |
+        Energy
+        Monitoring
+      - |
+        Retro-
+        Commissioning
+
   - format: single
     text: buildsmartdc.com launched in Summer 2013
 

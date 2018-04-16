@@ -1,0 +1,12 @@
+<h1>{{ slide.title | default: "slide.title" | newline_to_br }}</h1>
+<ul>
+    {% unless slide.list %}
+        {% for i in (1..3) %}
+            <li><span>{{ i }}</span>slide.list[{{ i }}]</li>
+        {% endfor %}
+    {% else %}
+        {% for item in slide.list %}
+            <li><span>{{ forloop.index }}</span>{{ item | newline_to_br }}</li>
+        {% endfor %}
+    {% endunless %}
+</ul>

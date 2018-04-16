@@ -5,6 +5,8 @@ sectionbreak:
     background: '{{ site.navy-background }}'
 list:
     background: '{{ site.navy-background }}'
+list-step:
+    background: '{{ site.grey-background }}'
 contact:
     background: '{{ site.navy-background }}'
 image:

@@ -14,6 +14,8 @@ slides:
 
   - format: list
 
+  - format: list-step
+
   - format: image
     image: "/bringing-observability/data-discovery-example.jpg"
     image-caption: This is an image caption.
