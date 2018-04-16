@@ -6,7 +6,7 @@
         {% endfor %}
     {% else %}
         {% for item in slide.list %}
-            <li>{{ item }}</li>
+            <li>{{ item | newline_to_br }}</li>
         {% endfor %}
     {% endunless %}
 </ul>

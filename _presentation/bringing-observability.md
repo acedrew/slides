@@ -46,8 +46,12 @@ slides:
   - format: list
     title: DGS
     list:
-      - ~28M ft² (2.6M m²) building portfolio, valued at ~$40B USD
-      - ~$450M USD annual operating budget, ~$100M spent on energy
+      - |
+        ~28M ft² (2.6M m²) building portfolio,
+        valued at ~$40B USD
+      - |
+        ~$450M USD annual operating budget,
+        ~$100M spent on energy
       - established an energy, sustainability and environment division in 2012
       - progressive city government pushing zero carbon goals
       - responsibility as an equitable provider of civic services
@@ -85,8 +89,16 @@ slides:
   - format: sectionbreak
     title: what we’re building now
 
+  - format: single-topbar
+    title: what is retro-commissioning?
+    text: process to restore and optimize operating building systems to their design intent
+
   - format: sectionbreak
     title: intent ≠ state
+
+  - format: single-topbar
+    title: buildings are complicated.
+    text: conditioning spaces in commercial buildings more closely resembles a complex industrial process than your home AC
 
   - format: single
     text: an industrial process with a different product in every room, and the product changes multiple times each day
@@ -211,6 +223,22 @@ slides:
       - move toward a constant commissioning reality with continuous improvement
       - identify new ways to empower our users with data to achieve a sustainable city
       - integrate other energy resources to deliver virtual power plant solutions
+
+  - format: single-topbar
+    title: what is constant commissioning?
+    text: maintain optimal performance through dynamic occupancy, equipment availability, weather, and energy markets
+
+  - format: single-topbar
+    title: what is DERMS?
+    text: |
+        Distributed Energy Resource Management Systems  
+        (energy buzzword warning)
+
+  - format: single-topbar
+    title: what is VPP?
+    text: |
+        Virtual Power Plant;
+        mitigating the need for physical infrastructure through intelligent management of existing energy resources
 
   - format: single
     text: deliver observability to the built environment
