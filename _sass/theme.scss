@@ -315,9 +315,10 @@ body {
         &:after {
             content: '';
             position: absolute;
+            top: 0;
             right: 0;
-            width: 0px;
-            height: 0px;
+            width: 0;
+            height: 0;
             border-top: 137px solid $navy;
             border-bottom: 137px solid $navy;
             border-left: 50px solid transparent;

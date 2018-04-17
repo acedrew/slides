@@ -66,21 +66,29 @@ slides:
     text: energy, sustainability and environment
 
   - format: list-step
+    slide-transition: "slide-in fade-out"
     title: |
         BUILDSMART DC:
         More data.
         <strong>Less Carbon.</strong>
         Zero Excuses.
     list:
-      - |
-        Design
-        Excellence
-      - |
-        Energy
-        Monitoring
-      - |
-        Retro-
-        Commissioning
+      - text: Design <br> Excellence
+      - text: Energy <br> Monitoring
+      - text: Retro- <br> Commissioning
+
+  - format: list-step
+    slide-transition: "fade-in slide-out"
+    title: |
+        BUILDSMART DC:
+        More data.
+        <strong>Less Carbon.</strong>
+        Zero Excuses.
+    list:
+      - text: Design <br> Excellence
+      - text: Energy <br> Monitoring
+        selected: true
+      - text: Retro- <br> Commissioning
 
   - format: single
     text: buildsmartdc.com launched in Summer 2013
@@ -105,6 +113,19 @@ slides:
 
   - format: sectionbreak
     title: what we’re building now
+
+  - format: list-step
+    slide-transition: "slide"
+    title: |
+        BUILDSMART DC:
+        More data.
+        <strong>Less Carbon.</strong>
+        Zero Excuses.
+    list:
+      - text: Design <br> Excellence
+      - text: Energy <br> Monitoring
+      - text: Retro- <br> Commissioning
+        selected: true
 
   - format: single-topbar
     title: what is retro-commissioning?

@@ -11,4 +11,3 @@ contact:
     background: '{{ site.navy-background }}'
 image:
     background: '{{ site.navy-background }}'
-    background-transition: "{{ slide.background-transition }}"

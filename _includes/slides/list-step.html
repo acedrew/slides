@@ -2,11 +2,11 @@
 <ul>
     {% unless slide.list %}
         {% for i in (1..3) %}
-            <li><span>{{ i }}</span>slide.list[{{ i }}]</li>
+            <li><span>{{ i }}</span>slide.list.text[{{ i }}]</li>
         {% endfor %}
     {% else %}
         {% for item in slide.list %}
-            <li><span>{{ forloop.index }}</span>{{ item | newline_to_br }}</li>
+            <li {% if item.selected == true %} class="selected" {% endif %}><span>{{ forloop.index }}</span>{{ item.text }}</li>
         {% endfor %}
     {% endunless %}
 </ul>
