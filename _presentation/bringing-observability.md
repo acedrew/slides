@@ -295,9 +295,8 @@ slides:
     first-name: Andrew
     last-name: Rodgers
     email: andrew@aceics.com
-    handles:
-      - ! '@acedrew'
-      - ! '@acedrewcha'
+    twitter: acedrew
+    instagram: acedrewcha
     website: aceics.com
 
 ---

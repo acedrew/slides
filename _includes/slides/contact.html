@@ -1,10 +1,7 @@
 <h1>{{ slide.first-name | default: "slide.first-name" }}<br>{{ slide.last-name | default: "slide.last-name" }}</h1>
-                <ul>
-                    <li><a href="mailto:{{ slide.email }}">{{ slide.email | default: "slide.email" }}</a></li>
-
-                    {% for handle in slide.handles %}
-                        <li>{{ handle }}</li>
-                    {% endfor %}
-                </ul>
-
-                    <p><a href="http://{{ slide.website }}">{{ slide.website | default: "slide.website" }}</a></p>
+<ul>
+    <li><a href="mailto:{{ slide.email }}">{{ slide.email | default: "slide.email" }}</a></li>
+    <li><a class="social-link twitter" href="http://twitter.com/{{ slide.twitter }}">{{ slide.twitter | default: "slide.twitter" | prepend: '@' }}</a></li>
+    <li><a class="social-link instagram" href="http://instagram.com/{{ slide.instagram }}">{{ slide.instagram | default: "slide.instagram" | prepend: '@' }}</a></li>
+</ul>
+<p><a href="http://{{ slide.website }}">{{ slide.website | default: "slide.website" }}</a></p>

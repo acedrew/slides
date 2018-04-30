@@ -354,12 +354,27 @@ body {
         font-weight: 300;
         line-height: 1.2;
         list-style-type: none;
-        color: $red;
     }
 
     a {
         color: #fff;
     }
+
+    .social-link {
+        color: $red;
+
+        &:before {
+             content: '';
+             display: inline-block;
+             width: 100px;
+             height: 100px;
+             margin-right: 20px;
+        }
+
+    }
+
+    .social-link.twitter { background: url("../assets/img/icons/twitter-icon.svg") no-repeat left bottom }
+    .social-link.instagram { background: url("../assets/img/icons/instagram-icon.svg") no-repeat left bottom }
 
     p a {
         font-size: 32px;
