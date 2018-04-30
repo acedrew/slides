@@ -126,6 +126,7 @@ body {
         padding: 0 120px;
         background-color: $navy;
         text-align: left;
+        margin-top: -1px; // fix sub pixel top line
     }
 
     .top-bar h1 {
@@ -167,6 +168,7 @@ body {
         color: $red;
         padding: 0 170px;
         background-color: $navy;
+        margin-top: -1px; // fix sub pixel top line
 
         h1 {
             width: 100%;
