@@ -1,10 +1,14 @@
 ---
 layout: slideshow
-title:  "Bringing Observability to the Built Environment at City Scale"
 author: "Andrew Rodgers"
+title:  "Bringing Observability to the Built Environment at City Scale"
+email: andrew@aceics.com
+website: aceics.com
+twitter: acedrew
+instagram: acedrewcha
+
 slides:
   - format: intro
-    title: Bringing Observability to the Built Environment at City Scale
     notes: Don't forget this is an intro
 
   - format: sectionbreak
@@ -292,11 +296,5 @@ slides:
     title: Thank You
 
   - format: contact
-    first-name: Andrew
-    last-name: Rodgers
-    email: andrew@aceics.com
-    twitter: acedrew
-    instagram: acedrewcha
-    website: aceics.com
 
 ---
