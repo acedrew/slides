@@ -14,13 +14,15 @@ layout: default
                  {% endif %}
                  data-background-color="{{ site.data.slide-templates[slide.format].background | liquify }}"
                  data-background-transition="{{ slide.background-transition | liquify | default:"fade" }}"
-                 data-transition="{{ slide.slide-transition | liquify | default:"slide" }}">
+                 data-transition="{{ slide.slide-transition | liquify | default:"slide" }}"
+                 data-state="footer-{{ slide.footer}}">
         {% include slides/{{ slide.format }}.html %}
         <aside class="notes">
             {{ slide.notes | default:"slide.notes" | liquify }}
         </aside>
         </section>
     {% endfor %}
+    {% include slides/footer.html %}
 
     </div>
 </div>
