@@ -1,4 +1,4 @@
-<div class="top-bar">
-    <h1>{{ slide.title | default: "slide.title" }}</h1>
+<div class="single-topbar__top-bar">
+    <h1 class="single-topbar__title">{{ slide.title | default: "slide.title" }}</h1>
 </div>
-<p>{{ slide.text | default: "slide.text" | newline_to_br }}</p>
+<p class="single-topbar__body">{{ slide.text | default: "slide.text" | newline_to_br }}</p>

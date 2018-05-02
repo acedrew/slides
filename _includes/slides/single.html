@@ -1,4 +1,4 @@
 {% if slide.title %}
-    <h1>{{ slide.title }}</h1>
+    <h1 class="single__title">{{ slide.title }}</h1>
 {% endif %}
-<p>{{ slide.text | default: "slide.text" }}</p>
+<p class="single__body">{{ slide.text | default: "slide.text" }}</p>

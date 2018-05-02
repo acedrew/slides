@@ -1,12 +1,12 @@
-<h1>{{ slide.title | default: "slide.title"}}</h1>
-<ul>
+<h1 class="list__title">{{ slide.title | default: "slide.title"}}</h1>
+<ul class="list__ul">
     {% unless slide.list %}
         {% for i in (1..5) %}
-            <li>slide.list[{{ i }}]</li>
+            <li class="list__li">slide.list[{{ i }}]</li>
         {% endfor %}
     {% else %}
         {% for item in slide.list %}
-            <li>{{ item | newline_to_br }}</li>
+            <li class="list__li">{{ item | newline_to_br }}</li>
         {% endfor %}
     {% endunless %}
 </ul>

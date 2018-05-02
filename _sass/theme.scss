@@ -3,7 +3,6 @@
 /////////////////////////
 
 body {
-
     line-height: 1.2;
     letter-spacing: 2px;
 }
@@ -18,7 +17,7 @@ body {
 // Navigation Controls
 
 .reveal .controls {
-  color: $navy;
+    color: $navy;
 }
 
 .reveal.has-dark-background .controls {
@@ -28,8 +27,8 @@ body {
 // Progress Bar
 
 .reveal .progress {
-  background: rgba(0, 0, 0, 0.2);
-  color: $navy;
+     background: rgba(0, 0, 0, 0.2);
+     color: $navy;
 }
 
 .reveal.has-dark-background .progress {
@@ -38,9 +37,9 @@ body {
 }
 
 .reveal .progress span {
-  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
-  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+    transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
 }
 
  // Base Slide Styles
@@ -52,7 +51,7 @@ body {
     height: 100%;
     font-weight: 700;
     color: $navy;
-    padding: 150px 125px !important;
+    padding: 150px 125px;
 }
 
 /////////////////////////
@@ -61,30 +60,29 @@ body {
 
 .slides .intro {
     justify-content: space-between;
-    padding-bottom: 190px !important;
+    padding-bottom: 190px;
     color: $red;
     text-align: left;
+}
 
-    h1 {
-        font-size: 132px;
-        line-height: 1.1;
-        font-weight: 300;
-        color: #fff;
-    }
+.intro__title {
+    font-size: 132px;
+    line-height: 1.1;
+    font-weight: 300;
+    color: #fff;
+}
 
-    p {
-        font-size: 30px;
-        font-weight: 500;
-        letter-spacing: 2px;
-    }
-
+.intro__author {
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 /////////////////////////
 // Section Break Slide
 /////////////////////////
 
-.slides .sectionbreak {
+.sectionbreak__title {
     color: $red;
     font-size: 140px;
     line-height: 1;
@@ -95,17 +93,17 @@ body {
 /////////////////////////
 
 .slides .single {
-    padding: 0!important;
+    padding: 0;
+}
 
-    h1 {
-        font-size: 270px;
-        letter-spacing: 0;
-    }
+.single__title {
+    font-size: 270px;
+    letter-spacing: 0;
+}
 
-    p {
-        font-size: 90px;
-        padding: 0 200px;
-    }
+.single__body {
+    font-size: 90px;
+    padding: 0 200px;
 }
 
 /////////////////////////
@@ -113,37 +111,36 @@ body {
 /////////////////////////
 
 .slides .single-topbar {
-    padding: 0 !important;
+    padding: 0;
+}
 
-    .top-bar {
-        align-self: flex-start;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 200px;
-        padding: 0 120px;
-        background-color: $navy;
-        text-align: left;
-        margin-top: -1px; // fix sub pixel top line
-    }
+.single-topbar__top-bar {
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    padding: 0 120px;
+    background-color: $navy;
+    text-align: left;
+    margin-top: -1px; // fix sub pixel top line
+}
 
-    .top-bar h1 {
-        font-size: 89px;
-        line-height: 1;
-        color: $red;
-        letter-spacing: 2px;
-    }
+.single-topbar__title {
+    font-size: 89px;
+    line-height: 1;
+    color: $red;
+    letter-spacing: 2px;
+}
 
-    p {
-        flex: 1 0 auto;
-        display: flex;
-        align-items: center;
-        font-size: 90px;
-        padding: 0 170px;
-        padding-bottom: 100px; // offset vertical center
-        background-color: $red;
-    }
-
+.single-topbar__body {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    font-size: 90px;
+    padding: 0 170px;
+    padding-bottom: 100px; // offset vertical center
+    background-color: $red;
 }
 
 /////////////////////////
@@ -151,31 +148,26 @@ body {
 /////////////////////////
 
 .slides .single-split {
-    padding: 0 !important;
+    padding: 0;
+}
 
-    hgroup {
-        flex: 1 0 50%;
-        display: flex;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-        font-size: 90px;
-        color: $red;
-        padding: 0 170px;
-        background-color: $navy;
-        margin-top: -1px; // fix sub pixel top line
+.single-split__header {
+    flex: 1 0 50%;
+    display: flex;
+    align-items: center;
+    padding: 0 170px;
+    margin-top: -1px; // fix sub pixel top line
+    background-color: $navy;
+    color: $red;
+}
 
-        h1 {
-            width: 100%;
-        }
+.single-split__header + .single-split__header {
+    background-color: $red;
+    color: $navy;
+}
 
-    }
-
-    hgroup + hgroup {
-        background-color: $red;
-        color: $navy;
-    }
-
+.single-split__title {
+    font-size: 90px;
 }
 
 /////////////////////////
@@ -185,11 +177,11 @@ body {
 .slides .thanks {
     justify-content: flex-start;
     text-align: left;
+}
 
-    h1 {
-        font-size: 116px;
-        font-weight: 300;
-    }
+.thanks__title {
+    font-size: 116px;
+    font-weight: 300;
 }
 
 /////////////////////////
@@ -197,51 +189,45 @@ body {
 /////////////////////////
 
 .slides .list {
-    display: flex !important;
     flex-direction: row;
-    align-items: stretch;
-    padding: 0 !important;
-    top: 0;
-    bottom: 0;
+    padding: 0;
+}
+
+.list__title {
+    width: 40%;
+    text-align: center;
+    align-self: center;
+    font-size: 90px;
+    font-weight: 400;
     color: $red;
+}
+
+.list__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+    font-size: 42px;
+    font-weight: 600;
     text-align: left;
+    list-style-type: none;
+    background-color: $grey;
+    color: $grey-dark;
+}
 
-    h1 {
-        padding-left: 125px;
-        font-size: 90px;
-        width: 40%;
-        align-self: center;
-        font-weight: 400;
-    }
+.list__li {
+    position: relative;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    border-bottom: 1px solid #fff;
+}
 
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-        height: 100%;
-        width: 60%;
-        font-size: 42px;
-        font-weight: 600;
-        text-align: left;
-        list-style-type: none;
-        background-color: $grey;
-        color: $grey-dark;
-    }
-
-    li {
-        position: relative;
-        flex: 1 1 auto;
-        display: flex;
-        align-items: center;
-        padding: 0 40px;
-        border-bottom: 1px solid #fff;
-    }
-
-    li:last-of-type {
-        border-bottom: none;
-    }
-
+.list__li:last-of-type {
+    border-bottom: none;
 }
 
 /////////////////////////
@@ -249,84 +235,75 @@ body {
 /////////////////////////
 
 .slides .list-step {
-    display: flex !important;
+    padding: 0;
     flex-direction: row;
-    align-items: stretch;
-    padding: 0 !important;
-    top: 0;
-    bottom: 0;
-    color: $grey-dark;
     text-align: left;
+}
 
-    h1 {
-        padding-left: 125px;
-        font-size: 90px;
-        width: 60%;
-        align-self: center;
-        font-weight: 400;
+.list-step__title {
+    padding-left: 125px;
+    font-size: 90px;
+    width: 60%;
+    align-self: center;
+    font-weight: 400;
+    color: $grey-dark;
 
-        strong {
-            font-weight: 700;
-        }
-
-    }
-
-    ul {
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: center;
-        height: 100%;
-        padding: 130px 0;
-        width: 40%;
-        font-size: 42px;
-        font-weight: 600;
-        text-align: left;
-        list-style-type: none;
-        background-color: $navy;
-        color: $grey;
-    }
-
-    li {
-        position: relative;
-        flex: 1 1 auto;
-        display: flex;
-        align-items: center;
-        padding: 0 0 0 100px;
-    }
-
-    li span {
-        width: 180px;
-        font-size: 240px;
-        line-height: 1;
-        color: $red;
-    }
-
-    li.selected {
-        background-color: $red;
-
-        span {
-            color: $navy;
-        }
-
-        &:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 0;
-            height: 0;
-            border-top: 137px solid $navy;
-            border-bottom: 137px solid $navy;
-            border-left: 50px solid transparent;
-        }
-
+    strong {
+        font-weight: 700;
     }
 
 }
 
-.list-step .slide-footer {
-    display: none;
+.list-step__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 100%;
+    padding: 130px 0;
+    width: 40%;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: left;
+    list-style-type: none;
+    background-color: $navy;
+    color: $grey;
+}
+
+.list-step__li {
+    position: relative;
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 100px;
+}
+
+.list-step__li span {
+    width: 180px;
+    font-size: 240px;
+    line-height: 1;
+    color: $red;
+}
+
+.list-step__li.selected {
+    background-color: $red;
+
+    span {
+        color: $navy;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 137px solid $navy;
+        border-bottom: 137px solid $navy;
+        border-left: 50px solid transparent;
+    }
+
 }
 
 /////////////////////////
@@ -335,74 +312,110 @@ body {
 
 .slides .contact {
     justify-content: space-between;
-    padding: 150px 125px !important;
     text-align: left;
     color: #fff;
+}
 
-    h1 {
-        font-size: 128px;
-        font-weight: 300;
-        line-height: 1;
-        text-transform: lowercase;
-        margin-bottom: 20px;
+.contact a {
+    color: #fff;
+}
+
+.contact__name {
+    font-size: 128px;
+    font-weight: 300;
+    line-height: 1;
+    text-transform: lowercase;
+    margin-bottom: 20px;
+}
+
+.contact .contact__list {
+    font-size: 78px;
+    font-weight: 300;
+    line-height: 1.2;
+    list-style-type: none;
+}
+
+.social-link {
+    color: $red !important;
+    border: none;
+
+    &:before {
+         content: '';
+         display: inline-block;
+         width: 100px;
+         height: 100px;
+         margin: 10px 20px 10px 0;
+         vertical-align: middle;
     }
 
-    ul {
-        font-size: 78px;
-        font-weight: 300;
-        line-height: 1.2;
-        list-style-type: none;
-    }
+}
 
-    a {
-        color: #fff;
-    }
+.social-link.twitter:before {
+    background: url("../assets/img/icons/twitter-icon.svg") no-repeat;
+    background-size: contain;
+}
 
-    .social-link {
-        color: $red;
-        border: none;
+.social-link.instagram:before {
+    background: url("../assets/img/icons/instagram-icon.svg") no-repeat;
+    background-size: contain;
+}
 
-        &:before {
-             content: '';
-             display: inline-block;
-             width: 100px;
-             height: 100px;
-             margin: 10px 20px 10px 0;
-             vertical-align: middle;
-        }
-
-    }
-
-    .social-link.twitter:before {
-        background: url("../assets/img/icons/twitter-icon.svg") no-repeat;
-        background-size: contain;
-    }
-
-    .social-link.instagram:before {
-        background: url("../assets/img/icons/instagram-icon.svg") no-repeat;
-        background-size: contain;
-    }
-
-    p a {
-        font-size: 32px;
-        font-weight: 400;
-        line-height: 1;
-        padding-bottom: 2px;
-        border-bottom: 1px solid #fff;
-        opacity: .7;
-    }
-
+.contact__website a {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #fff;
+    opacity: .7;
 }
 
 /////////////////////////
 // Image Slide
 /////////////////////////
 
-.slides .image {
+.image__caption {
     color: #fff;
+    font-size: 110px;
+    font-weight: 700;
+}
 
-    h1 {
-        font-size: 110px;
-        font-weight: 700;
+/////////////////////////
+// Slide Footer
+/////////////////////////
+
+.slides .slide-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 80px;
+    background-color: rgba(255,255,255,0.1);
+    font-size: 28px;
+    color: $navy;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+
+    .social-link {
+        color: inherit;
     }
+
+    .social-link:before {
+        width: 50px;
+        height: 50px;
+        background-size: contain;
+        margin: 0 10px 0 0;
+    }
+
+}
+
+.reveal.has-dark-background .slide-footer {
+    color: $red;
+}
+
+.slides .slide-footer.hidden {
+    opacity: 0;
+    visibility: hidden;
 }

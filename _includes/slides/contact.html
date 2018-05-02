@@ -1,7 +1,7 @@
-<h1>{{ page.author | default: "page.author" | split: ' ' | first }}<br>{{ page.author | default: "page.author" | split: ' ' | last }}</h1>
-<ul>
+<h1 class="contact__name">{{ page.author | default: "page.author" | split: ' ' | first }}<br>{{ page.author | split: ' ' | last }}</h1>
+<ul class="contact__list">
     <li><a href="mailto:{{ slide.email }}">{{ page.email | default: "page.email" }}</a></li>
     <li><a class="social-link twitter" href="http://twitter.com/{{ page.twitter }}">{{ page.twitter | default: "page.twitter" | prepend: '@' }}</a></li>
     <li><a class="social-link instagram" href="http://instagram.com/{{ page.instagram }}">{{ page.instagram | default: "page.instagram" | prepend: '@' }}</a></li>
 </ul>
-<p><a href="http://{{ page.website }}">{{ page.website | default: "page.website" }}</a></p>
+<p class="contact__website"><a href="http://{{ page.website }}">{{ page.website | default: "page.website" }}</a></p>
