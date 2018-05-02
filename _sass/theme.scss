@@ -51,7 +51,7 @@ body {
     height: 100%;
     font-weight: 700;
     color: $navy;
-    padding: 150px 125px;
+    padding: 0 125px;
 }
 
 /////////////////////////
@@ -60,6 +60,7 @@ body {
 
 .slides .intro {
     justify-content: space-between;
+    padding-top: 150px;
     padding-bottom: 190px;
     color: $red;
     text-align: left;
@@ -178,6 +179,7 @@ body {
 .slides .thanks {
     justify-content: flex-start;
     text-align: left;
+    padding-top: 150px;
 }
 
 .thanks__title {
@@ -315,6 +317,8 @@ body {
     justify-content: space-between;
     text-align: left;
     color: #fff;
+    padding-top: 150px;
+    padding-bottom: 150px;
 }
 
 .contact__name {
@@ -385,6 +389,8 @@ body {
 // Slide Footer
 /////////////////////////
 
+$footer-height: 90px;
+
 .slide-footer {
     display: flex;
     justify-content: space-between;
@@ -392,7 +398,7 @@ body {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 90px;
+    height: $footer-height;
     padding: 0 50px;
     background-color: rgba(255,255,255,0.1);
     font-size: 28px;
@@ -408,7 +414,7 @@ body {
         content: '';
         position: absolute;
         width: 100vw;
-        height: 90px;
+        height: $footer-height;
         background-color: rgba(255,255,255,0.1);
     }
 
@@ -426,9 +432,14 @@ body {
     color: inherit;
 }
 
+// make room for the footer by offsetting the slide bottom padding
+.slides section[data-state="footer-shown"] {
+    padding-bottom: $footer-height !important;
+}
+
 // if footer = hidden visually hide the footer
 .footer-hidden .slide-footer {
-    bottom: -80px;
+    bottom: -$footer-height;
     opacity: 0;
     visibility: hidden;
 }

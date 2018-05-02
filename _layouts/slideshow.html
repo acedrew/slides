@@ -15,7 +15,12 @@ layout: default
                  data-background-color="{{ site.data.slide-templates[slide.format].background | liquify }}"
                  data-background-transition="{{ slide.background-transition | liquify | default:"fade" }}"
                  data-transition="{{ slide.slide-transition | liquify | default:"slide" }}"
-                 data-state="footer-{{ slide.footer}}">
+                 {% if slide.footer %}
+                     data-state="footer-{{ slide.footer}}"
+                 {% else %}
+                    data-state="footer-shown"
+                 {% endif %}
+                 >
         {% include slides/{{ slide.format }}.html %}
         <aside class="notes">
             {{ slide.notes | default:"slide.notes" | liquify }}
