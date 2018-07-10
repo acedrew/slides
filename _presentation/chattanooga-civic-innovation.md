@@ -1,14 +1,14 @@
 ---
 layout: slideshow
-title:  "Bringing Observability to the Built Environment at City Scale"
+title:  "Building Research Partnerships for Civic Impact"
 author: "Andrew Rodgers"
 slides:
   - format: intro
-    title: Bringing Observability to the Built Environment at City Scale
+    title: Building Research Partnerships for Civic Impact
     notes: Don't forget this is an intro
 
   - format: sectionbreak
-    title: ! 'intro: me'
+    title: ! 'intro: The Enterprise Center'
 
   - format: single
     text: my career started with Industrial IT
