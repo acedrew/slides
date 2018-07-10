@@ -1,12 +1,12 @@
-<h1>{{ slide.title | default: "slide.title" | newline_to_br }}</h1>
-<ul>
+<h1 class="list-step__title">{{ slide.title | default: "slide.title" | newline_to_br }}</h1>
+<ul class="list-step__ul">
     {% unless slide.list %}
         {% for i in (1..3) %}
-            <li><span>{{ i }}</span>slide.list.text[{{ i }}]</li>
+            <li class="list-step__li"><span>{{ i }}</span>slide.list.text[{{ i }}]</li>
         {% endfor %}
     {% else %}
         {% for item in slide.list %}
-            <li {% if item.selected == true %} class="selected" {% endif %}><span>{{ forloop.index }}</span>{{ item.text }}</li>
+            <li {% if item.selected == true %} class="list-step__li selected" {% else %} class="list-step__li" {% endif %}><span>{{ forloop.index }}</span>{{ item.text }}</li>
         {% endfor %}
     {% endunless %}
 </ul>

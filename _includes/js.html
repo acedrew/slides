@@ -56,7 +56,7 @@ Reveal.initialize({
 
 });
 window.onload = function() {
-    var listHeaders = document.querySelectorAll(".list h1");
+    var listHeaders = document.querySelectorAll(".list .list__title");
     listHeaders.forEach(function(header) {
         var headerLength = header.innerHTML.length;
         var textSize = Math.max(345 - headerLength * 25, 90);

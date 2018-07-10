@@ -1,11 +1,16 @@
 ---
 layout: slideshow
-title:  "Bringing Observability to the Built Environment at City Scale"
 author: "Andrew Rodgers"
+title:  "Bringing Observability to the Built Environment at City Scale"
+email: andrew@aceics.com
+website: aceics.com
+twitter: acedrew
+instagram: acedrewcha
+
 slides:
   - format: intro
-    title: Bringing Observability to the Built Environment at City Scale
     notes: Don't forget this is an intro
+    footer: hidden
 
   - format: sectionbreak
     title: ! 'intro: me'
@@ -55,6 +60,7 @@ slides:
       - established an energy, sustainability and environment division in 2012
       - progressive city government pushing zero carbon goals
       - responsibility as an equitable provider of civic services
+    footer: hidden
 
   - format: sectionbreak
     title: ! 'intro: NCE'
@@ -76,6 +82,7 @@ slides:
       - text: Design <br> Excellence
       - text: Energy <br> Monitoring
       - text: Retro- <br> Commissioning
+    footer: hidden
 
   - format: list-step
     slide-transition: "fade-in slide-out"
@@ -89,6 +96,7 @@ slides:
       - text: Energy <br> Monitoring
         selected: true
       - text: Retro- <br> Commissioning
+    footer: hidden
 
   - format: single
     text: buildsmartdc.com launched in Summer 2013
@@ -126,6 +134,7 @@ slides:
       - text: Energy <br> Monitoring
       - text: Retro- <br> Commissioning
         selected: true
+    footer: hidden
 
   - format: single-topbar
     title: what is retro-commissioning?
@@ -150,6 +159,7 @@ slides:
   - format: single-split
     title: system designers rarely connect with system operators
     text: facilities staff are operating systems without understanding the design intentions
+    footer: hidden
 
   - format: single
     text: rather than embracing and tackling the complexity head on, market has looked to vendors to hide it
@@ -162,6 +172,7 @@ slides:
       - raise the standard for comfort and reliability
       - develop the workforce that can operate and maintain the building of the future
       - deliver an aggressive ROI that allows investment in future innovations
+    footer: hidden
 
   - format: sectionbreak
     title: the approach
@@ -183,12 +194,15 @@ slides:
 
   - format: image
     image: "/bringing-observability/application-data-flow.svg"
+    footer: hidden
 
   - format: image
     image: "/bringing-observability/metric-data-flow.svg"
+    footer: hidden
 
   - format: image
     image: "/bringing-observability/log-data-flow.svg"
+    footer: hidden
 
   - format: single
     title: ! '46'
@@ -212,24 +226,30 @@ slides:
   - format: image
     image: "/bringing-observability/data-discovery-example.jpg"
     background-transition: "slide"
+    footer: hidden
 
   - format: single
     text: ongoing operational status
+    footer: hidden
 
   - format: image
     image: "/bringing-observability/operational-status-example-1.jpg"
     background-transition: "fade"
+    footer: hidden
 
   - format: image
     image: "/bringing-observability/operational-status-example-2.jpg"
     background-transition: "fade"
+    footer: hidden
 
   - format: single
     text: fault detection and alerting
+    footer: hidden
 
   - format: image
     image: "/bringing-observability/fault-detection-example.jpg"
     background-transition: "slide"
+    footer: hidden
 
   - format: sectionbreak
     title: what have we accomplished?
@@ -265,6 +285,7 @@ slides:
       - move toward a constant commissioning reality with continuous improvement
       - identify new ways to empower our users with data to achieve a sustainable city
       - integrate other energy resources to deliver virtual power plant solutions
+    footer: hidden
 
   - format: single-topbar
     title: what is constant commissioning?
@@ -290,14 +311,9 @@ slides:
 
   - format: thanks
     title: Thank You
+    footer: hidden
 
   - format: contact
-    first-name: Andrew
-    last-name: Rodgers
-    email: andrew@aceics.com
-    handles:
-      - ! '@acedrew'
-      - ! '@acedrewcha'
-    website: aceics.com
+    footer: hidden
 
 ---

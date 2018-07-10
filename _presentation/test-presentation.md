@@ -3,6 +3,7 @@ layout: slideshow
 title:  "Test Presentation"
 slides:
   - format: intro
+    footer: hidden
 
   - format: sectionbreak
 
@@ -25,8 +26,10 @@ slides:
     image: "/bringing-observability/fault-detection-example.jpg"
     image-caption: This is a much longer image caption as a fragment.
     background-transition: "slide"
+    footer: hidden
 
   - format: thanks
 
   - format: contact
+    footer: hidden
 ---
