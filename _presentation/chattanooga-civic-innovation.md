@@ -2,294 +2,237 @@
 layout: slideshow
 title:  "Building Research Partnerships for Civic Impact"
 author: "Andrew Rodgers"
+email: andrew@theenterprisectr.org
+website: theenterprisectr.org
+twitter: acedrew
+instagram: acedrewcha
 slides:
   - format: intro
     title: Building Research Partnerships for Civic Impact
     notes: Don't forget this is an intro
+    author: " "
 
   - format: sectionbreak
     title: ! 'intro: The Enterprise Center'
 
-  - format: single
-    text: my career started with Industrial IT
-
-  - format: single
-    text: 600 employee plant, Fortune 100 company
-
-  - format: single
-    text: isolated process control network, NT 4.0 Domain
-
-  - format: single
-    text: vendor driven, vertically "integrated" architecture
-
-  - format: single
-    text: actually 67 separate vertically integrated architectures
-
-  - format: single
-    text: silos...
-
-  - format: single
-    text: that’s one way to do it...
-
-  - format: single
-    text: 67 panes of glass?
-
-  - format: single
-    text: So why am I here?
-
-  - format: sectionbreak
-    title: ! 'intro: DGS'
-
-  - format: single
-    text: District of Columbia Department of General Services
-
-  - format: list
-    title: DGS
+  - format: list-step
+    slide-transition: "slide-in fade-out"
+    title: |
+           The Enterprise Center is a non-profit tasked with addressing three core civic initiatives:
     list:
-      - |
-        ~28M ft² (2.6M m²) building portfolio,
-        valued at ~$40B USD
-      - |
-        ~$450M USD annual operating budget,
-        ~$100M spent on energy
-      - established an energy, sustainability and environment division in 2012
-      - progressive city government pushing zero carbon goals
-      - responsibility as an equitable provider of civic services
+      - text: Innovation District <br> Development
+      - text: Research and <br> Applications <br> Development
+      - text: Digital Equity
 
   - format: sectionbreak
-    title: ! 'intro: NCE'
+    title: ! 'A brief history of the Gig'
 
   - format: single
-    text: supporting the DC Department of General Services
+    title: ! '2010'
+    text: Chattanooga's municipal utility, EPB, launches gigabit fiber internet service
 
   - format: single
-    text: energy, sustainability and environment
+    title: ! '2012'
+    text: Community leaders organize a group to explore how to strategically make the most of this infrastructure investment
+
+  - format: single
+    title: ! '2013'
+    text: The work is released by newly elected Mayor Berke as the "Technology, Gig & Entrepreneurship" Task Force report
+
+  - format: single
+    text: Of the seven key initiatives identified by the team, number one was to establish an entity to address the other six
+
+  - format: single
+    title: ! '2014'
+    text: The Enterprise Center was re-tooled from an existing economic development organization to address these initiatives
+
+  - format: single
+    title: ! '2016'
+    text: After accomplishing seminal work towards these six initiatives, The Enterprise Center refined a broader set of strategies to execute on
 
   - format: list-step
     slide-transition: "slide-in fade-out"
     title: |
-        BUILDSMART DC:
-        More data.
-        <strong>Less Carbon.</strong>
-        Zero Excuses.
+           The Enterprise Center is a non-profit tasked with addressing three core civic initiatives:
     list:
-      - text: Design <br> Excellence
-      - text: Energy <br> Monitoring
-      - text: Retro- <br> Commissioning
+      - text: Innovation District <br> Development
+      - text: Research and <br> Applications <br> Development
+      - text: Digital Equity
 
   - format: list-step
-    slide-transition: "fade-in slide-out"
+    slide-transition: "fade-in"
     title: |
-        BUILDSMART DC:
-        More data.
-        <strong>Less Carbon.</strong>
-        Zero Excuses.
+           The Enterprise Center is a non-profit tasked with addressing three core civic initiatives:
     list:
-      - text: Design <br> Excellence
-      - text: Energy <br> Monitoring
+      - text: Innovation District <br> Development
+      - text: Research and <br> Applications <br> Development
         selected: true
-      - text: Retro- <br> Commissioning
-
-  - format: single
-    text: buildsmartdc.com launched in Summer 2013
-
-  - format: single
-    text: provides a unified portal for energy consumption data about the ~400 buildings in the DGS portfolio
-
-  - format: single
-    text: first time a city had achieved near-real-time aggregation of utility data and made it available to public
+      - text: Digital Equity
 
   - format: sectionbreak
-    title: ! 'intro: VOLTTRON™'
+    title: ! 'Where is the infrastructure since 2010?'
 
   - format: single
-    text: U.S. Department of Energy sponsored OSS platform for “transactional energy”
+    title: ! "600"
+    text: Square mile area with fully deployed ubiquitous fiber capable of 10gpbs symmetrical service in front of every home and business
 
   - format: single
-    text: framework for distributed sensing and control with sane trust and security defaults
+    title: ! "9,000"
+    text: Route miles of fiber
 
   - format: single
-    text: by researchers for researchers, but with lofty goals of commercial adoption
+    title: ! "170,000"
+    text: Number of total addresses with access to fiber services
+
+  - format: single
+    title: ! "91,411"
+    text: Number of home and businesses subscribing to fiber service
+
+  - format: single
+    title: ! "9,800"
+    text: Number of home and businesses subscribing to 1 gigabit or higher
+
+  - format: single
+    title: ! "24,079,078"
+    text: Number of outage minutes reduced or avoided by the grid automation technology enabled by the fiber infrastructure in 2016-2017 fiscal year
 
   - format: sectionbreak
-    title: what we’re building now
+    title: ! 'What are we doing with it?'
 
   - format: list-step
-    slide-transition: "slide"
     title: |
-        BUILDSMART DC:
-        More data.
-        <strong>Less Carbon.</strong>
-        Zero Excuses.
+           The Enterprise Center is a non-profit tasked with addressing three core civic initiatives:
     list:
-      - text: Design <br> Excellence
-      - text: Energy <br> Monitoring
-      - text: Retro- <br> Commissioning
+      - text: Innovation District <br> Development
+      - text: Research and <br> Applications <br> Development
         selected: true
-
-  - format: single-topbar
-    title: what is retro-commissioning?
-    text: process to restore and optimize operating building systems to their design intent
-
-  - format: sectionbreak
-    title: intent ≠ state
-
-  - format: single-topbar
-    title: buildings are complicated.
-    text: conditioning spaces in commercial buildings more closely resembles a complex industrial process than your home AC
+      - text: Digital Equity
 
   - format: single
-    text: an industrial process with a different product in every room, and the product changes multiple times each day
+    text: Research and Academia are siloed
 
   - format: single
-    text: focus on energy efficiency at the design level encourages adoption of complex systems to achieve efficiency goals
+    text: So are city agencies
 
-  - format: sectionbreak
-    title: if you don’t see the parallels yet...
+  - format: single
+    text: Citizens are not
+
+  - format: single
+    text: We don't live our lives in silos
+
+  - format: single
+    text: How do we bridge this divide?
 
   - format: single-split
-    title: system designers rarely connect with system operators
-    text: facilities staff are operating systems without understanding the design intentions
-
-  - format: single
-    text: rather than embracing and tackling the complexity head on, market has looked to vendors to hide it
+    title: In Chattanooga, an external entity was formed
+    text: The Enterprise Center Research and Applications Develoment Initiative
+    notes: Civic Tech Collaborative
 
   - format: list
-    title: Our goals
+    title: 'Our goals:'
     list:
-      - define the metrics that drive sustained operational excellence
-      - reduce energy consumption and carbon impact of the built environment
-      - raise the standard for comfort and reliability
-      - develop the workforce that can operate and maintain the building of the future
-      - deliver an aggressive ROI that allows investment in future innovations
-
-  - format: sectionbreak
-    title: the approach
-
-  - format: single
-    text: disaggregate energy and operational data, collect critical operational state from every system
-
-  - format: single
-    text: invest time at the front end in data quality assurance to enable actionable insights at all organizational levels
-
-  - format: single
-    text: support simple operational insights for existing staff while building out infrastructure for advanced analytics
-
-  - format: single
-    text: deliver data and insights to public to ensure accountability and operational excellence is sustained
-
-  - format: sectionbreak
-    title: where we are
-
-  - format: image
-    image: "/bringing-observability/application-data-flow.svg"
-
-  - format: image
-    image: "/bringing-observability/metric-data-flow.svg"
-
-  - format: image
-    image: "/bringing-observability/log-data-flow.svg"
-
-  - format: single
-    title: ! '46'
-    text: sites
-
-  - format: single
-    title: ! '>29,700'
-    text: topics
-
-  - format: single
-    title: ! '>2,700,000'
-    text: samples per 24h
-
-  - format: single
-    title: ! '>972.2M'
-    text: total sensor records
-
-  - format: single
-    text: data-discovery for troubleshooting
-
-  - format: image
-    image: "/bringing-observability/data-discovery-example.jpg"
-    background-transition: "slide"
-
-  - format: single
-    text: ongoing operational status
-
-  - format: image
-    image: "/bringing-observability/operational-status-example-1.jpg"
-    background-transition: "fade"
-
-  - format: image
-    image: "/bringing-observability/operational-status-example-2.jpg"
-    background-transition: "fade"
-
-  - format: single
-    text: fault detection and alerting
-
-  - format: image
-    image: "/bringing-observability/fault-detection-example.jpg"
-    background-transition: "slide"
-
-  - format: sectionbreak
-    title: what have we accomplished?
-
-  - format: single
-    title: 24
-    text: sites with active programs
-
-  - format: single
-    title: $4M USD
-    text: total savings to date
-
-  - format: single
-    title: $1M USD
-    text: current recurring annual savings
-
-  - format: single
-    title: 20%
-    text: reduction in energy costs at priority sites
-
-  - format: single
-    title: $500K USD
-    text: additional recurring annual savings this fiscal year
-
-  - format: sectionbreak
-    title: what’s next?
+      - Apply cutting edge research to citizen services in a sustainable way
+      - Increase access to research funding with collaboration for outcomes
+      - Foster a spirit of innovation within government for continued improvement
+      - Develop our research communities to think beyond the lab (or paper)
+      - Make Chattanooga a better place to live, work and play for EVERYONE
 
   - format: list
-    title: next steps
+    slide-transition: "slide-in fade-out"
+    title: 'Using the assets you have in your community:'
     list:
-      - continue to develop business processes around the available data
-      - implement advanced DERMS applications using our technology infrastructure
-      - move toward a constant commissioning reality with continuous improvement
-      - identify new ways to empower our users with data to achieve a sustainable city
-      - integrate other energy resources to deliver virtual power plant solutions
+      - Government
+      - Academia
+      - Business
+      - Foundations
+      - K-12 Education
+      - A fully ubiquitous 10Gpbs Fiber Network
 
-  - format: single-topbar
-    title: what is constant commissioning?
-    text: maintain optimal performance through dynamic occupancy, equipment availability, weather, and energy markets
-
-  - format: single-topbar
-    title: what is DERMS?
-    text: |
-        Distributed Energy Resource Management Systems  
-        (energy buzzword warning)
-
-  - format: single-topbar
-    title: what is VPP?
-    text: |
-        Virtual Power Plant;
-        mitigating the need for physical infrastructure through intelligent management of existing energy resources
+  - format: list
+    slide-transition: "fade-in"
+    title: 'Using the assets you have in your community:'
+    list:
+      - Government
+      - Academia
+      - Business
+      - Foundations
+      - K-12 Education
+      - <strike>A fully ubiquitous 10Gpbs Fiber Network</strike>
 
   - format: single
-    text: deliver observability to the built environment
+    text: While remembering that organizations are made up of people
 
   - format: single
-    text: build the platform that enables sustainable, responsive management of real estate portfolios
+    text: and that experience is an asset
+
+  - format: single
+    text: Chattanooga was a pioneer in collaborative Public Private Partnerships
+
+  - format: single
+    text: We've leveraged those past experiences to build a unique collaborative environment for civic innovation
+
+  - format: single-split
+    title: Apply cutting edge research to citizen services in a sustainable way
+    text: Sustainable solutions are built by operationalizing impact
+
+  - format: single
+    text: Chattanooga launched a 4K streaming microscope project with the University of Southern California
+
+  - format: single
+    text: By involving High School teachers, what would have been an experiment that ended with a research paper became a transformative, scalable classroom experience
+    notes: Same process for nokia streaming
+
+  - format: single-split
+    title: Increase access to research funding with collaboration for outcomes
+    text: Robust partnerships assure project funders of sustainable outcomes
+
+  - format: single
+    text: Chattanooga community key partners in 2 of 13 NSF Smart & Connected Community Grants Awarded in 2016
+
+  - format: single
+    text: The robust, tested collaborations we had established assured NSF these projects would have impact
+
+  - format: single
+    text: Both projects demonstrated significant progress in their first half of funding on national stages
+
+  - format: single-split
+    title: Foster a spirit of innovation within government for continued improvement
+    text: Initiate academia and government collaborations with low-risk projects
+
+  - format: single
+    title: $15M
+    text: Value of grant applications TEC has been key contributor towards that leverage Chattanooga's advanced infrastructure
+
+  - format: list
+    title: 'Everyone working together to make Chattanooga a better place to live, work and play for EVERYONE'
+    list:
+      - Government
+      - Academia
+      - Business
+      - Foundations
+      - K-12 Education
+
+  - format: sectionbreak
+    title: ! 'To reiterate:'
+
+  - format: single
+    text: Collaboration is built on relationships
+
+  - format: single
+    text: Relationships are hard
+
+  - format: single
+    text: Collaboration won't happen without dedicated focus on strengthening relationships
+
+  - format: sectionbreak
+    title: ! '“It won’t happen unless someone wakes up every day thinking about making it happen”'
 
   - format: thanks
     title: Thank You
+    notes: say something positive about the audience, trump
+
+  - format: sectionbreak
+    title: ! "Questions?"
 
   - format: contact
     first-name: Andrew

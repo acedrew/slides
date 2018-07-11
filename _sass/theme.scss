@@ -364,7 +364,9 @@ body {
     background: url("../assets/img/icons/instagram-icon.svg") no-repeat;
     background-size: contain;
 }
-
+p.contact__website {
+    padding-bottom: 2em;
+}
 .contact__website a {
     font-size: 32px;
     font-weight: 400;
@@ -374,7 +376,6 @@ body {
     color: #fff;
     opacity: .7;
 }
-
 /////////////////////////
 // Image Slide
 /////////////////////////
