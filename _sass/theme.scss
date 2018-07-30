@@ -27,8 +27,8 @@ body {
 // Progress Bar
 
 .reveal .progress {
-     background: rgba(0, 0, 0, 0.2);
-     color: $navy;
+    background: rgba(0, 0, 0, 0.2);
+    color: $navy;
 }
 
 .reveal.has-dark-background .progress {
@@ -42,7 +42,7 @@ body {
     transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
 }
 
- // Base Slide Styles
+// Base Slide Styles
 
 .slide section {
     display: flex !important;
@@ -104,7 +104,7 @@ body {
 }
 
 .single__body {
-    font-size: 90px;
+    font-size: $font-size-body;
     padding: 0 200px;
 }
 
@@ -119,6 +119,7 @@ body {
 .single-topbar__top-bar {
     align-self: flex-start;
     display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 200px;
@@ -129,7 +130,7 @@ body {
 }
 
 .single-topbar__title {
-    font-size: 89px;
+    font-size: $font-size-body + 10px;
     line-height: 1;
     color: $red;
     letter-spacing: 2px;
@@ -139,7 +140,7 @@ body {
     flex: 1 0 auto;
     display: flex;
     align-items: center;
-    font-size: 90px;
+    font-size: $font-size-body;
     padding: 0 170px;
     padding-bottom: 100px; // offset vertical center
     background-color: $red;
@@ -169,7 +170,7 @@ body {
 }
 
 .single-split__title {
-    font-size: 90px;
+    font-size: $font-size-body;
 }
 
 /////////////////////////
@@ -198,11 +199,12 @@ body {
 
 .list__title {
     width: 40%;
-    text-align: center;
+    text-align: left;
     align-self: center;
-    font-size: 90px;
+    font-size: $font-size-body;
     font-weight: 400;
     color: $red;
+    padding-right: 100px;
 }
 
 .list__ul {
@@ -244,17 +246,16 @@ body {
 }
 
 .list-step__title {
-    padding-left: 125px;
-    font-size: 90px;
+    font-size: $font-size-body;
     width: 60%;
     align-self: center;
     font-weight: 400;
     color: $grey-dark;
+    padding-right: 100px;
 
     strong {
         font-weight: 700;
     }
-
 }
 
 .list-step__ul {
@@ -296,7 +297,7 @@ body {
     }
 
     &:after {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         right: 0;
@@ -306,7 +307,6 @@ body {
         border-bottom: 137px solid $navy;
         border-left: 50px solid transparent;
     }
-
 }
 
 /////////////////////////
@@ -345,14 +345,13 @@ body {
     border: none;
 
     &:before {
-         content: '';
-         display: inline-block;
-         width: 100px;
-         height: 100px;
-         margin: 10px 20px 10px 0;
-         vertical-align: middle;
+        content: "";
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 10px 20px 10px 0;
+        vertical-align: middle;
     }
-
 }
 
 .social-link.twitter:before {
@@ -374,7 +373,7 @@ p.contact__website {
     padding-bottom: 2px;
     border-bottom: 1px solid #fff;
     color: #fff;
-    opacity: .7;
+    opacity: 0.7;
 }
 /////////////////////////
 // Image Slide
@@ -401,22 +400,22 @@ $footer-height: 90px;
     width: 100%;
     height: $footer-height;
     padding: 0 50px;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
     font-size: 28px;
     color: $navy;
     z-index: 11;
     opacity: 1;
     visibility: visible;
-    transition: all .4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
     // using before and after to fake "bleed" the footer background
     &:before,
     &:after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100vw;
         height: $footer-height;
-        background-color: rgba(255,255,255,0.1);
+        background-color: rgba(255, 255, 255, 0.1);
     }
 
     &:before {
@@ -426,7 +425,6 @@ $footer-height: 90px;
     &:after {
         right: -100vw;
     }
-
 }
 
 .slide-footer__link {
