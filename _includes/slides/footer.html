@@ -1,4 +1,4 @@
 <footer {% if slide.footer == false %} class="slide-footer hidden" {% else %} class="slide-footer"{% endif %}>
-    <p class="slide-footer__author">{{ page.author | default: "page.author" }}</p>
+    <p class="slide-footer__author">{{ page.author | default: "page.author" }}{% if page.company%}<span class="divider">//</span>{{ page.company }}{% endif %}</p>
     <a class="slide-footer__link" href="http://twitter.com/{{ page.twitter }}">{{ page.twitter | default: "page.twitter" | prepend: '@' }}</a>
 </footer>

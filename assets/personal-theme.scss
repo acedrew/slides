@@ -195,6 +195,16 @@ a {
     color: $red !important;
 }
 
+.social-link.twitter:before {
+    background: url("../assets/img/icons/twitter-icon.svg") no-repeat;
+    background-size: contain;
+}
+
+.social-link.instagram:before {
+    background: url("../assets/img/icons/instagram-icon.svg") no-repeat;
+    background-size: contain;
+}
+
 .contact__website a {
     font-weight: 400;
     border-bottom: 1px solid #fff;
@@ -221,11 +231,12 @@ a {
     // using before and after to fake "bleed" the footer background
     &:before,
     &:after {
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: inherit;
     }
 }
 
-// change text color to red on dark background slides
+// dark background slide overrides
+
 .reveal.has-dark-background .slide-footer {
     color: $red;
 }

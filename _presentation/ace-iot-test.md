@@ -3,17 +3,17 @@ layout: slideshow
 theme: ace-iot
 
 author: "Andrew Rodgers"
-title:  "Ace IoT - The Futue of IoT"
-email: andrew@aceiotsolutions.com
+title:  "The Futue of IoT"
+company: "Ace IoT Solutions"
+email: contact@aceiotsolutions.com
 website: aceiotsolutions.com
-twitter: acedrew
-instagram: acedrewcha
+twitter: aceiotsolutions
+instagram: aceiot
 
 slides:
   - format: intro
     notes: Don't forget this is an intro
     footer: hidden
-
 
   - format: sectionbreak
     title: ! 'intro: me'
