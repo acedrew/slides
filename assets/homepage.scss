@@ -1,3 +1,11 @@
+---
+---
+
+// Homepage Variables
+
+$dark: #2A2E3C;
+$light: #C2D300;
+
 // To make this view scrollable we must deal with the body overflow hidden needed for Reveal JS.
 
 .homepage {
@@ -21,14 +29,14 @@
     display: flex;
     align-items: center;
     padding: 30px;
-    background-color: $navy;
+    background-color: $dark;
     font-size: 34px;
     font-weight: 500;
-    color: $red;
+    color: $light;
 
     &:nth-child(even) {
-        background-color: $red;
-        color: $navy;
+        background-color: $light;
+        color: $dark;
     }
 
 }
@@ -38,22 +46,24 @@
     margin-top: 6px; // offset after bottom border height
     letter-spacing: 1px;
 
-    &:hover:after {
-        width: 80px;
-    }
-
     &:after {
         content: '';
         display: block;
         margin-top: 10px;
         width: 0;
         height: 3px;
-        background-color: $red;
+        background-color: $light;
+        opacity: .5;
         transition: width 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
+        border-radius: 3px;
+    }
+
+    &:hover:after {
+        width: 80px;
     }
 
 }
 
 .homepage__li:nth-child(even) .homepage__a:after {
-    background-color: $navy;
+    background-color: $dark;
 }

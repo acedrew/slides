@@ -38,6 +38,9 @@ collections:
 
 
 # Slide Background Variables
-navy-background: "#1C213F"
-red-background: "#F15A50"
-grey-background: "#D9D4CC"
+# Personal Theme
+personal-dark: "#1C213F"
+personal-alt: "#D9D4CC"
+# Ace IoT Theme
+ace-iot-dark: "#43344F"
+ace-iot-alt: "#DBDBDB"

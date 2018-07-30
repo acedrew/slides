@@ -1,11 +1,11 @@
 ---
 layout: slideshow
-theme: personal
+theme: ace-iot
 
 author: "Andrew Rodgers"
-title:  "Bringing Observability to the Built Environment at City Scale"
-email: andrew@aceics.com
-website: aceics.com
+title:  "Ace IoT - The Futue of IoT"
+email: andrew@aceiotsolutions.com
+website: aceiotsolutions.com
 twitter: acedrew
 instagram: acedrewcha
 

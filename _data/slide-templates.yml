@@ -1,13 +1,13 @@
 ---
 intro:
-    background: '{{ site.navy-background }}'
+    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
 sectionbreak:
-    background: '{{ site.navy-background }}'
+    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
 list:
-    background: '{{ site.navy-background }}'
+    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
 list-step:
-    background: '{{ site.grey-background }}'
+    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-alt }} {% else %} {{ site.personal-alt }} {% endif %}'
 contact:
-    background: '{{ site.navy-background }}'
+    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
 image:
-    background: '{{ site.navy-background }}'
+    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
