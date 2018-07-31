@@ -2,7 +2,6 @@
 // Base Variables
 /////////////////////////
 
-$font-size-body: 80px;
 $footer-height: 90px;
 
 /////////////////////////
@@ -149,9 +148,10 @@ body {
 
 .list__title {
     width: 40%;
+    font-size: $font-size-body;
+    line-height: 1;
     text-align: left;
     align-self: center;
-    font-size: $font-size-body;
     padding: 0 100px 0 0;
 }
 

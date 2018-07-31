@@ -17,6 +17,8 @@ $grey-dark: #2A2E3C;
 $grey: #595E71;
 $grey-light: #DBDBDB;
 
+$font-size-body: 68px;
+
 /////////////////////////
 // Import Base Styles
 /////////////////////////
@@ -28,8 +30,8 @@ $grey-light: #DBDBDB;
 /////////////////////////
 
 body {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px;
+    font-family: 'Termina', 'Poppins', sans-serif;
+    line-height: 1.4;
 }
 
 a {
@@ -60,6 +62,7 @@ a {
 }
 
 .intro__title {
+    font-size: 128px;
     font-weight: 600;
     color: $white;
 
@@ -76,7 +79,7 @@ a {
 
 .intro__author {
     color: $green;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 /////////////////////////
@@ -84,6 +87,7 @@ a {
 /////////////////////////
 
 .sectionbreak__title {
+    font-size: 120px;
     color: $green;
 }
 
@@ -92,7 +96,11 @@ a {
 /////////////////////////
 
 .single__title {
-    letter-spacing: 0;
+    font-size: 210px;
+}
+
+.single__body {
+    font-size: $font-size-body;
 }
 
 /////////////////////////
@@ -105,7 +113,6 @@ a {
 
 .single-topbar__title {
     color: $green;
-    letter-spacing: 2px;
 }
 
 /////////////////////////
@@ -140,7 +147,8 @@ a {
 }
 
 .list__ul {
-    font-weight: 600;
+    font-size: 38px;
+    font-weight: 500;
     background-color: rgba($white, 0.7);
     color: $purple;
 }
@@ -155,6 +163,7 @@ a {
 
 .list-step__title {
     font-weight: 400;
+    line-height: 1.4;
     color: $purple;
 
     strong {
@@ -163,12 +172,14 @@ a {
 }
 
 .list-step__ul {
+    font-size: 38px;
     font-weight: 600;
     background-color: $purple;
     color: $grey-light;
 }
 
 .list-step__li span {
+    font-size: 200px;
     color: $green;
 }
 
@@ -251,8 +262,9 @@ a {
 /////////////////////////
 
 .slide-footer {
-    background-color: rgba($white, 0.3);
+    font-size: 26px;
     color: $purple;
+    background-color: rgba($white, 0.3);
 
     // using before and after to fake "bleed" the footer background
     &:before,
