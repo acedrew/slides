@@ -11,6 +11,8 @@ $blue: #1446A0;
 $blue-light: #ADFCF9;
 $purple: #43344F;
 
+$white: #fff;
+$black: #000;
 $grey-dark: #2A2E3C;
 $grey: #595E71;
 $grey-light: #DBDBDB;
@@ -31,20 +33,21 @@ body {
 }
 
 a {
-    color: $green;
+    color: $red;
 }
 
 // Default Slide Background Color
 
+.reveal .backgrounds,
 .reveal .slide-background {
-    background-color: $grey-light;
+    background-color: $green;
 }
 
 // Base Slide Styles
 
 .slide section {
     font-weight: 700;
-    color: $grey-dark;
+    color: $purple;
 }
 
 /////////////////////////
@@ -52,28 +55,28 @@ a {
 /////////////////////////
 
 .slides .intro {
-    color: $green;
+    color: $white;
     text-align: left;
 }
 
 .intro__title {
-    font-weight: 700;
-    color: $green;
+    font-weight: 600;
+    color: $white;
 
     &:after {
         content: '';
         display: block;
         width: 100px;
-        height: 10px;
+        height: 8px;
         margin-top: 20px;
         background-color: rgba($green, .5);
-        border-radius: 10px;
+        border-radius: 8px;
     }
 }
 
 .intro__author {
-    color: rgba(#fff, 0.7);
-    font-weight: 400;
+    color: $green;
+    font-weight: 500;
 }
 
 /////////////////////////
@@ -97,7 +100,7 @@ a {
 /////////////////////////
 
 .single-topbar__top-bar {
-    background-color: $grey-dark;
+    background-color: $purple;
 }
 
 .single-topbar__title {
@@ -110,13 +113,13 @@ a {
 /////////////////////////
 
 .single-split__header {
-    background-color: $grey-dark;
+    background-color: $purple;
     color: $green;
 }
 
 .single-split__header + .single-split__header {
     background-color: $green;
-    color: $grey-dark;
+    color: $purple;
 }
 
 /////////////////////////
@@ -137,13 +140,13 @@ a {
 }
 
 .list__ul {
-    font-weight: 400;
-    background-color: rgba(#fff, 0.7);
-    color: $grey-dark;
+    font-weight: 600;
+    background-color: rgba($white, 0.7);
+    color: $purple;
 }
 
 .list__li {
-    border-bottom: 2px solid $grey-dark;
+    border-bottom: 2px solid $white;
 }
 
 /////////////////////////
@@ -152,7 +155,7 @@ a {
 
 .list-step__title {
     font-weight: 400;
-    color: $grey-dark;
+    color: $purple;
 
     strong {
         font-weight: 700;
@@ -161,8 +164,8 @@ a {
 
 .list-step__ul {
     font-weight: 600;
-    background-color: $grey-dark;
-    color: rgba(#fff, 0.7);
+    background-color: $purple;
+    color: $grey-light;
 }
 
 .list-step__li span {
@@ -170,16 +173,16 @@ a {
 }
 
 .list-step__li.selected {
-    color: $grey-dark;
+    color: $purple;
     background-color: $green;
 
     span {
-        color: $grey-dark;
+        color: $purple;
     }
 
     &:after {
-        border-top: 137px solid $grey-dark;
-        border-bottom: 137px solid $grey-dark;
+        border-top: 137px solid $purple;
+        border-bottom: 137px solid $purple;
         border-left: 50px solid transparent;
     }
 }
@@ -189,7 +192,7 @@ a {
 /////////////////////////
 
 .slides .contact {
-    color: #fff;
+    color: $white;
 }
 
 .contact__name {
@@ -204,7 +207,7 @@ a {
 }
 
 .contact__email {
-    color: #fff;
+    color: $white;
 }
 
 .social-link {
@@ -230,16 +233,16 @@ a {
 
 .contact__website a {
     font-weight: 400;
-    border-bottom: 1px solid #fff;
-    color: #fff;
-    opacity: 0.7;
+    border-bottom: 2px solid rgba($white, .5);
+    color: $white;
 }
+
 /////////////////////////
 // Image Slide
 /////////////////////////
 
 .image__caption {
-    color: #fff;
+    color: $white;
     font-weight: 700;
 }
 
@@ -248,8 +251,8 @@ a {
 /////////////////////////
 
 .slide-footer {
-    background-color: rgba(#fff, 0.3);
-    color: $grey;
+    background-color: rgba($white, 0.3);
+    color: $purple;
 
     // using before and after to fake "bleed" the footer background
     &:before,
@@ -260,7 +263,7 @@ a {
     .divider {
         font-size: 18px;
         vertical-align: middle;
-        color: rgba($grey, 0.5);
+        color: rgba($purple, 0.5);
         margin: 0 10px;
         transition: all 0.4s ease-in-out;
     }
@@ -270,8 +273,8 @@ a {
 // dark background slide overrides
 
 .reveal.has-dark-background .slide-footer {
-    background-color: rgba(#000, 0.1);
-    color: rgba(#fff, 0.7);
+    background-color: rgba($black, 0.1);
+    color: $green;
 
     &:before,
     &:after {
@@ -279,6 +282,6 @@ a {
     }
 
     .divider {
-        color: rgba(#fff, 0.5);
+        color: rgba($green, 0.5);
     }
 }

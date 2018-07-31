@@ -3,8 +3,8 @@
 
 // Homepage Variables
 
-$dark: #2A2E3C;
-$light: #C2D300;
+$dark: #1C213F;
+$light: #F15A50;
 
 // To make this view scrollable we must deal with the body overflow hidden needed for Reveal JS.
 
@@ -31,7 +31,7 @@ $light: #C2D300;
     padding: 30px;
     background-color: $dark;
     font-size: 34px;
-    font-weight: 500;
+    font-weight: 600;
     color: $light;
 
     &:nth-child(even) {
@@ -51,11 +51,11 @@ $light: #C2D300;
         display: block;
         margin-top: 10px;
         width: 0;
-        height: 3px;
+        height: 4px;
         background-color: $light;
         opacity: .5;
         transition: width 600ms cubic-bezier(0.075, 0.82, 0.165, 1);
-        border-radius: 3px;
+        border-radius: 4px;
     }
 
     &:hover:after {
