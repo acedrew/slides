@@ -1,7 +1,17 @@
 <h1 class="contact__name">{{ page.author | default: "page.author" | split: ' ' | first }}<br>{{ page.author | split: ' ' | last }}</h1>
+
 <ul class="contact__list">
     <li><a class="contact__email" href="mailto:{{ slide.email }}">{{ page.email | default: "page.email" }}</a></li>
-    <li><a class="social-link twitter" href="http://twitter.com/{{ page.twitter }}">{{ page.twitter | default: "page.twitter" | prepend: '@' }}</a></li>
-    <li><a class="social-link instagram" href="http://instagram.com/{{ page.instagram }}">{{ page.instagram | default: "page.instagram" | prepend: '@' }}</a></li>
+    {% if page.twitter %}<li><a class="social-link twitter" href="http://twitter.com/{{ page.twitter }}">{{ page.twitter | default: "page.twitter" | prepend: '@' }}</a></li>{% endif %}
+    {% if page.instagram %}<li><a class="social-link instagram" href="http://instagram.com/{{ page.instagram }}">{{ page.instagram | default: "page.instagram" | prepend: '@' }}</a></li>{% endif %}
 </ul>
-<p class="contact__website"><a href="http://{{ page.website }}">{{ page.website | default: "page.website" }}</a></p>
+
+<div class="contact__footer">
+
+    <p class="contact__website"><a href="http://{{ page.website }}">{{ page.website | default: "page.website" }}</a></p>
+
+    {% if page.theme == 'ace-iot' %}
+        {%- include ace-logo.html color="dark" -%}
+    {% endif %}
+
+</div>

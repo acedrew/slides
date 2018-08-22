@@ -1,4 +1,17 @@
 <footer {% if slide.footer == false %} class="slide-footer hidden" {% else %} class="slide-footer"{% endif %}>
-    <p class="slide-footer__author">{{ page.author | default: "page.author" }}{% if page.company%}<span class="divider">//</span>{{ page.company }}{% endif %}</p>
-    <a class="slide-footer__link" href="http://twitter.com/{{ page.twitter }}">{{ page.twitter | default: "page.twitter" | prepend: '@' }}</a>
+
+    <p class="slide-footer__author">
+        {{ page.author | default: "page.author" }}
+
+        {% if page.theme == 'ace-iot' %}
+            {% if page.twitter %}<span class="divider">//</span>{{ page.twitter | prepend: '@' }}{% endif %}
+        {% endif %}
+    </p>
+
+    {% if page.theme == 'ace-iot' %}
+    <div class="slide-footer__logo">{%- include ace-logo.html -%}</div>
+
+    {% else %}
+        <a class="slide-footer__link" href="http://twitter.com/{{ page.twitter }}">{{ page.twitter | default: "page.twitter" | prepend: '@' }}</a>
+    {% endif %}
 </footer>

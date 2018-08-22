@@ -5,10 +5,10 @@ theme: ace-iot
 author: "Andrew Rodgers"
 title:  "The Futue of IoT"
 company: "Ace IoT Solutions"
-email: contact@aceiotsolutions.com
+email: info@aceiotsolutions.com
 website: aceiotsolutions.com
-twitter: aceiotsolutions
-instagram: aceiot
+twitter: acedrew
+# instagram: aceiot
 
 slides:
   - format: intro
