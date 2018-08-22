@@ -29,6 +29,20 @@ $font-size-body: 68px;
 // Theme Styles
 /////////////////////////
 
+.ace-logo {
+    vertical-align: middle;
+    width: 100%;
+    max-width: 300px;
+}
+
+.ace-logo path {
+    transition: fill 0.4s ease-in-out;
+}
+
+.ace-logo.dark #ace-wordmark {
+    fill: #fff;
+}
+
 body {
     font-family: 'Termina', 'Poppins', sans-serif;
     line-height: 1.4;
@@ -57,22 +71,31 @@ a {
 /////////////////////////
 
 .slides .intro {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.slides .intro {
     color: $white;
     text-align: left;
 }
 
+.intro__header .ace-logo {
+    margin-bottom: 60px;
+}
+
 .intro__title {
-    font-size: 128px;
+    font-size: 110px;
     font-weight: 600;
     color: $white;
 
     &:after {
         content: '';
         display: block;
-        width: 100px;
-        height: 8px;
-        margin-top: 20px;
-        background-color: rgba($green, .5);
+        width: 80px;
+        height: 5px;
+        margin-top: 14px;
+        background-color: rgba($green, .6);
         border-radius: 8px;
     }
 }
@@ -204,6 +227,8 @@ a {
 
 .slides .contact {
     color: $white;
+    padding-top: 125px;
+    padding-bottom: 125px;
 }
 
 .contact__name {
@@ -240,6 +265,16 @@ a {
 .social-link.instagram:before {
     background: url("../assets/img/icons/instagram-icon-green.svg") no-repeat;
     background-size: contain;
+}
+
+.contact__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__footer .contact__website {
+    padding-bottom: 0;
 }
 
 .contact__website a {
@@ -282,6 +317,15 @@ a {
 
 }
 
+.slide-footer__logo .ace-logo {
+    max-width: 200px;
+
+    #logo-mark {
+        display: none;
+    }
+
+}
+
 // dark background slide overrides
 
 .reveal.has-dark-background .slide-footer {
@@ -296,4 +340,9 @@ a {
     .divider {
         color: rgba($green, 0.5);
     }
+
+    .slide-footer__logo #ace-wordmark {
+        fill: #fff;
+    }
+
 }
