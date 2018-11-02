@@ -2,11 +2,11 @@
 <ul class="list__ul">
     {% unless slide.list %}
         {% for i in (1..5) %}
-            <li class="list__li">slide.list[{{ i }}]</li>
+            <li class="list__li">slide.list[{{ i | markdownify }}]</li>
         {% endfor %}
     {% else %}
         {% for item in slide.list %}
-            <li class="list__li">{{ item | newline_to_br }}</li>
+            <li class="list__li">{{ item | newline_to_br | markdownify }}</li>
         {% endfor %}
     {% endunless %}
 </ul>
