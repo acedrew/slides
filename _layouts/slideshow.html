@@ -1,33 +1,3 @@
----
-layout: default
----
-
-<div class="reveal">
-    <div class="slides">
-
-    {% for slide in page.slides %}
-        <section class="{{ slide.format }}"
-                 {% if slide.image %}
-                     data-background-size="cover"
-                     data-background-size="no-repeat"
-                     data-background-image="{{ "/assets/img/" | relative_url }}{{ slide.image }}"
-                 {% endif %}
-                 data-background-color="{{ site.data.slide-templates[slide.format].background | liquify }}"
-                 data-background-transition="{{ slide.background-transition | liquify | default:"fade" }}"
-                 data-transition="{{ slide.slide-transition | liquify | default:"slide" }}"
-                 {% if slide.footer %}
-                     data-state="footer-{{ slide.footer}}"
-                 {% else %}
-                    data-state="footer-shown"
-                 {% endif %}
-                 >
-        {% include slides/{{ slide.format }}.html %}
-        <aside class="notes">
-            {{ slide.notes | default:"slide.notes" | liquify }}
-        </aside>
-        </section>
-    {% endfor %}
-    {% include slides/footer.html %}
-
-    </div>
-</div>
+version https://git-lfs.github.com/spec/v1
+oid sha256:66a5e92b91aa7e53a704e92ff52f5e250f90b549d5c680df923fe370495cd553
+size 1709

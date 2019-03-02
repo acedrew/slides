@@ -1,29 +1,3 @@
-## Getting Started
-
-### Install bundler
-
-~~~ sh
-$ gem install bundler
-~~~
-
-### Have bundler resolve your dependencies
-
-~~~ sh
-$ bundle install
-~~~
-
-### Run Jekyll Server
-
-~~~ sh
-$ jekyll serve
-~~~
-
-To have Jekyll livereload any changes run:
-
-~~~ sh
-$ jekyll serve --livereload
-~~~
-
-### Open Browser
-
-Navigate to http://localhost:4000/
+version https://git-lfs.github.com/spec/v1
+oid sha256:7aa12225015de9a6def2b6764eaa501000ae1137f9a89c366f58c4f22ac2c8ee
+size 335

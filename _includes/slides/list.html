@@ -1,12 +1,3 @@
-<h1 class="list__title">{{ slide.title | default: "slide.title"}}</h1>
-<ul class="list__ul">
-    {% unless slide.list %}
-        {% for i in (1..5) %}
-            <li class="list__li">slide.list[{{ i | markdownify }}]</li>
-        {% endfor %}
-    {% else %}
-        {% for item in slide.list %}
-            <li class="list__li">{{ item | newline_to_br | markdownify }}</li>
-        {% endfor %}
-    {% endunless %}
-</ul>
+version https://git-lfs.github.com/spec/v1
+oid sha256:24936cfa9ac80bdc4bb2302af1586379644a5fb09ba2bd75295e6ed2f77e7f5c
+size 422

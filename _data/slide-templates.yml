@@ -1,13 +1,3 @@
----
-intro:
-    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
-sectionbreak:
-    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
-list:
-    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
-list-step:
-    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-alt }} {% else %} {{ site.personal-alt }} {% endif %}'
-contact:
-    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
-image:
-    background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
+version https://git-lfs.github.com/spec/v1
+oid sha256:80d99cc7e5adb55ef7b13a9c0bdd1fc21ed3ef87958eac0e4591edbd60bacbab
+size 794
