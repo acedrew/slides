@@ -1,10 +1,3 @@
----
-title: Slides
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
+version https://git-lfs.github.com/spec/v1
+oid sha256:aa7ccc2a89c0b813ad1d51a93cbabe8d24ff1a03d2d0f6fbe56940750d7d9473
+size 1605
