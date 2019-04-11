@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:7121f10a7479c1d40376df7e7a9ceb6c01f8fff1bf3077cfbffd6a3cf907cbd8
-size 318
+---
+layout: default
+---
+
+<main class="homepage">
+
+    <ul class="homepage__list">
+
+        {% for presentation in site.presentation %}
+        <li class="homepage__li">
+            <a class="homepage__a" href="{{ presentation.url }}">{{ presentation.title }}</a>
+        </li>
+        {% endfor %}
+
+    </ul>
+
+</main>

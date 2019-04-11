@@ -1,3 +1,22 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:79f02c7d3bc11a593075560e07b865c8f9487aff55ae83aeea49e5d537d4fdde
-size 1058
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- homepage stylesheet logic -->
+    {% if page.url == "/" %}
+       <link rel="stylesheet" href="{{ "/assets/homepage.css" | relative_url }}">
+    {% endif %}
+    <!-- theme stylesheet logic -->
+    {% if page.theme == "ace-iot" %}
+        <link rel="stylesheet" href="{{ "/assets/ace-iot-theme.css" | relative_url }}">
+    {% else %}
+        <link rel="stylesheet" href="{{ "/assets/personal-theme.css" | relative_url }}">
+    {% endif %}
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? "{{ "/assets/print/pdf.css" | relative_url }}" : "{{ "/assets/print/paper.css" | relative_url }}";
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>

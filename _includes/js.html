@@ -1,3 +1,67 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e749fa3d93e153cec875026a19526b84b2b6e41013aa4631fa456958098665f
-size 1904
+<script src="{{ "/assets/js/reveal.js" | relative_url }}"></script>
+<script src="{{ "/assets/js/notes.js" | relative_url }}"></script>
+<script>
+Reveal.initialize({
+
+    // The "normal" size of the presentation, aspect ratio will be preserved
+	// when the presentation is scaled to fit different resolutions. Can be
+	// specified using percentage units.
+    // Default is 960 x 700
+	width: 1920,
+	height: 1080,
+    margin: 0,
+
+    // Vertical centering of slides
+	center: true,
+
+    // Display presentation control arrows
+    controls: false,
+
+    // Display a presentation progress bar
+    progress: false,
+
+    // Push each slide change to the browser history
+    history: true,
+
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
+
+    // Enable the slide overview mode
+    overview: true,
+
+    // Enables touch navigation on devices with touch input
+    touch: true,
+
+    // Loop the presentation
+    loop: false,
+
+    // Transition style
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+    // Transition speed
+    transitionSpeed: 'default', // default/fast/slow
+
+    // Transition style for full page slide backgrounds
+    backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+    // Number of slides away from the current that are visible
+    viewDistance: 3,
+
+    // The display mode that will be used to show slides
+    display: 'block',
+
+    // The maximum number of pages a single slide can expand onto when printing
+    // to PDF, unlimited by default
+    pdfMaxPagesPerSlide: 1
+
+});
+window.onload = function() {
+    var listHeaders = document.querySelectorAll(".list .list__title");
+    listHeaders.forEach(function(header) {
+        var headerLength = header.innerHTML.length;
+        var textSize = Math.max(345 - headerLength * 26, 90);
+        header.setAttribute("style", "font-size: " + textSize.toString() + "px");
+    });
+}
+
+</script>

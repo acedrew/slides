@@ -1,3 +1,10 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:58adf244ad4ddd3399e55efa8f05fa97026cddbe6e2d4c61362f9c690d191cc3
-size 196
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+    {%- include head.html -%}
+    <body>
+
+        {{ content }}
+
+    {%- include js.html -%}
+    </body>
+</html>

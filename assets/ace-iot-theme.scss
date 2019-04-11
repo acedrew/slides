@@ -1,3 +1,348 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:b6827f04448588f189aabf60c35a348a1140e7826186e25780d0f803f8e4da9f
-size 5494
+---
+---
+
+/////////////////////////
+// Theme Variables
+/////////////////////////
+
+$red: #F6511E;
+$green: #C2D300;
+$blue: #1446A0;
+$blue-light: #ADFCF9;
+$purple: #43344F;
+
+$white: #fff;
+$black: #000;
+$grey-dark: #2A2E3C;
+$grey: #595E71;
+$grey-light: #DBDBDB;
+
+$font-size-body: 68px;
+
+/////////////////////////
+// Import Base Styles
+/////////////////////////
+
+@import "base";
+
+/////////////////////////
+// Theme Styles
+/////////////////////////
+
+.ace-logo {
+    vertical-align: middle;
+    width: 100%;
+    max-width: 300px;
+}
+
+.ace-logo path {
+    transition: fill 0.4s ease-in-out;
+}
+
+.ace-logo.dark #ace-wordmark {
+    fill: #fff;
+}
+
+body {
+    font-family: 'Termina', 'Poppins', sans-serif;
+    line-height: 1.4;
+}
+
+a {
+    color: $red;
+}
+
+// Default Slide Background Color
+
+.reveal .backgrounds,
+.reveal .slide-background {
+    background-color: $green;
+}
+
+// Base Slide Styles
+
+.slide section {
+    font-weight: 700;
+    color: $purple;
+}
+
+/////////////////////////
+// Intro Slide
+/////////////////////////
+
+.slides .intro {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.slides .intro {
+    color: $white;
+    text-align: left;
+}
+
+.intro__header .ace-logo {
+    margin-bottom: 60px;
+}
+
+.intro__title {
+    font-size: 110px;
+    font-weight: 600;
+    color: $white;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 5px;
+        margin-top: 14px;
+        background-color: rgba($green, .6);
+        border-radius: 8px;
+    }
+}
+
+.intro__author {
+    color: $green;
+    font-weight: 400;
+}
+
+/////////////////////////
+// Section Break Slide
+/////////////////////////
+
+.sectionbreak__title {
+    font-size: 120px;
+    color: $green;
+}
+
+/////////////////////////
+// Single Slide
+/////////////////////////
+
+.single__title {
+    font-size: 210px;
+}
+
+.single__body {
+    font-size: $font-size-body;
+}
+
+/////////////////////////
+// Single Slide w/ Top Bar
+/////////////////////////
+
+.single-topbar__top-bar {
+    background-color: $purple;
+}
+
+.single-topbar__title {
+    color: $green;
+}
+
+/////////////////////////
+// Single Slide Split
+/////////////////////////
+
+.single-split__header {
+    background-color: $purple;
+    color: $green;
+}
+
+.single-split__header + .single-split__header {
+    background-color: $green;
+    color: $purple;
+}
+
+/////////////////////////
+// Thanks Slide
+/////////////////////////
+
+.thanks__title {
+    font-weight: 600;
+}
+
+/////////////////////////
+// List Slide
+/////////////////////////
+
+.list__title {
+    font-weight: 400;
+    color: $green;
+}
+
+.list__ul {
+    font-size: 38px;
+    font-weight: 500;
+    background-color: rgba($white, 0.7);
+    color: $purple;
+}
+
+.list__li {
+    border-bottom: 2px solid $white;
+}
+
+/////////////////////////
+// List Step Slide
+/////////////////////////
+
+.list-step__title {
+    font-weight: 400;
+    line-height: 1.4;
+    color: $purple;
+
+    strong {
+        font-weight: 700;
+    }
+}
+
+.list-step__ul {
+    font-size: 38px;
+    font-weight: 600;
+    background-color: $purple;
+    color: $grey-light;
+}
+
+.list-step__li span {
+    font-size: 200px;
+    color: $green;
+}
+
+.list-step__li.selected {
+    color: $purple;
+    background-color: $green;
+
+    span {
+        color: $purple;
+    }
+
+    &:after {
+        border-top: 137px solid $purple;
+        border-bottom: 137px solid $purple;
+        border-left: 50px solid transparent;
+    }
+}
+
+/////////////////////////
+// Contact Slide
+/////////////////////////
+
+.slides .contact {
+    color: $white;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.contact__name {
+    font-weight: 600;
+    // text-transform: lowercase;
+}
+
+.contact .contact__list {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 2;
+}
+
+.contact__email {
+    color: $white;
+}
+
+.social-link {
+    color: $green !important;
+
+    &:before {
+        width: 80px;
+        height: 80px;
+        margin: 0 20px 0 0;
+    }
+
+}
+
+.social-link.twitter:before {
+    background: url("../assets/img/icons/twitter-icon-green.svg") no-repeat;
+    background-size: contain;
+}
+
+.social-link.instagram:before {
+    background: url("../assets/img/icons/instagram-icon-green.svg") no-repeat;
+    background-size: contain;
+}
+
+.contact__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact__footer .contact__website {
+    padding-bottom: 0;
+}
+
+.contact__website a {
+    font-weight: 400;
+    border-bottom: 2px solid rgba($white, .5);
+    color: $white;
+}
+
+/////////////////////////
+// Image Slide
+/////////////////////////
+
+.image__caption {
+    color: $white;
+    font-weight: 700;
+}
+
+/////////////////////////
+// Slide Footer
+/////////////////////////
+
+.slide-footer {
+    font-size: 26px;
+    color: $purple;
+    background-color: rgba($white, 0.3);
+
+    // using before and after to fake "bleed" the footer background
+    &:before,
+    &:after {
+        background-color: inherit;
+    }
+
+    .divider {
+        font-size: 18px;
+        vertical-align: middle;
+        color: rgba($purple, 0.5);
+        margin: 0 10px;
+        transition: all 0.4s ease-in-out;
+    }
+
+}
+
+.slide-footer__logo .ace-logo {
+    max-width: 200px;
+
+    #logo-mark {
+        display: none;
+    }
+
+}
+
+// dark background slide overrides
+
+.reveal.has-dark-background .slide-footer {
+    background-color: rgba($black, 0.1);
+    color: $green;
+
+    &:before,
+    &:after {
+        background-color: inherit;
+    }
+
+    .divider {
+        color: rgba($green, 0.5);
+    }
+
+    .slide-footer__logo #ace-wordmark {
+        fill: #fff;
+    }
+
+}

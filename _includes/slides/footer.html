@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ac97da1cb579695702bc7952e475a6a0c0a29900e33ecead802b5a71ae1fc62c
-size 679
+<footer {% if slide.footer == false %} class="slide-footer hidden" {% else %} class="slide-footer"{% endif %}>
+
+    <p class="slide-footer__author">
+        {{ page.author | default: "page.author" }}
+
+        {% if page.theme == 'ace-iot' %}
+            {% if page.twitter %}<span class="divider">//</span>{{ page.twitter | prepend: '@' }}{% endif %}
+        {% endif %}
+    </p>
+
+    {% if page.theme == 'ace-iot' %}
+    <div class="slide-footer__logo">{%- include ace-logo.html -%}</div>
+
+    {% else %}
+        <a class="slide-footer__link" href="http://twitter.com/{{ page.twitter }}">{{ page.twitter | default: "page.twitter" | prepend: '@' }}</a>
+    {% endif %}
+</footer>

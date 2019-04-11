@@ -1,3 +1,30 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:e1cdc533a471887ba966ad272c51d5d70e2260790ee579a818ada7181a339dd9
-size 525
+/////////////////////////
+// Import Base Styles
+/////////////////////////
+
+@import "reveal";
+@import "base-theme";
+
+/////////////////////////
+// Additional Defaults
+/////////////////////////
+
+// Global box-sizing
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+}

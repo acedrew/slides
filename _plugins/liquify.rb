@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1e81df46529a50ae79f5e6588f69b620f72ff39e642b571bff15c701e3d95fb8
-size 373
+# This Liquid filter is used to liquid-parse the input.
+#
+# Created by @vividh (https://github.com/vividh)
+# Available under MIT License.
+
+module Jekyll
+    module LiquifyFilter
+        def liquify(input)
+            output = Liquid::Template.parse(input)
+            output.render(@context)
+        end
+    end
+end
+
+Liquid::Template.register_filter(Jekyll::LiquifyFilter)

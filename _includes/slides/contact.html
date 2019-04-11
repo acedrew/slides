@@ -1,3 +1,17 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:20efbf85fce0195538c9918a7d0d8905b2d75137bf69304a2bd97d9ff2f5cfae
-size 1103
+<h1 class="contact__name">{% if page.author contains " and " %}{{ page.author | default: "page.author" | split: ' and ' | first }}<br>{{ page.author | split: ' and ' | last }}{% else %}{{ page.author | default: "page.author" | split: ' ' | first }}<br>{{ page.author | split:' ' | last }}{% endif %}</h1>
+
+<ul class="contact__list">
+    <li><a class="contact__email" href="mailto:{{ slide.email }}">{{ page.email | default: "page.email" }}</a></li>
+    {% if page.twitter %}<li><a class="social-link twitter" href="http://twitter.com/{{ page.twitter }}">{{ page.twitter | default: "page.twitter" | prepend: '@' }}</a></li>{% endif %}
+    {% if page.instagram %}<li><a class="social-link instagram" href="http://instagram.com/{{ page.instagram }}">{{ page.instagram | default: "page.instagram" | prepend: '@' }}</a></li>{% endif %}
+</ul>
+
+<div class="contact__footer">
+
+    <p class="contact__website"><a href="http://{{ page.website }}">{{ page.website | default: "page.website" }}</a></p>
+
+    {% if page.theme == 'ace-iot' %}
+        {%- include ace-logo.html color="dark" -%}
+    {% endif %}
+
+</div>
