@@ -1,5 +1,4 @@
 ---
----
 intro:
     background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
 sectionbreak:
@@ -12,3 +11,4 @@ contact:
     background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
 image:
     background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
+---
