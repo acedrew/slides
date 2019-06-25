@@ -10,7 +10,7 @@ layout: default
                  {% if slide.image %}
                      data-background-size="cover"
                      data-background-size="no-repeat"
-                     data-background-image="{{ "/assets/img/" | relative_url }}{{ slide.image | liquify }}"
+                     data-background-image="{{ "/assets/img/" | relative_url }}{{ slide.image }}"
                  {% endif %}
                  {% if slide.iframe %}
                          data-background-iframe="{{ slide.iframe }}"
@@ -18,13 +18,14 @@ layout: default
                  {% if slide.background-color %}
                     data-background-color="{{ slide.background-color }}"
                 {% else %}
-                     data-background-color="{{ site.data.slide-templates[slide.format].background | liquify }}"
+                        {% assign background-color-scheme = site.data.slide-templates[slide.format].background[page.theme] %}
+                        data-background-color="{{ site[background-color-scheme] }}"
                  {% endif %}
                 {% if slide.video %}
-                         data-background-video="{{ "/assets/img/" | relative_url }}{{ slide.video | liquify }}"
+                         data-background-video="{{ "/assets/img/" | relative_url }}{{ slide.video }}"
                 {% endif %}
-                 data-background-transition="{{ slide.background-transition | liquify | default:"fade" }}"
-                 data-transition="{{ slide.slide-transition | liquify | default:"slide" }}"
+                 data-background-transition="{{ slide.background-transition | default:"fade" }}"
+                 data-transition="{{ slide.slide-transition | default:"slide" }}"
                  {% if slide.footer %}
                      data-state="footer-{{ slide.footer}}"
                  {% else %}
@@ -33,7 +34,7 @@ layout: default
                  >
         {% include slides/{{ slide.format }}.html %}
         <aside class="notes">
-            {{ slide.notes | default:"slide.notes" | liquify }}
+            {{ slide.notes | default:"slide.notes" }}
         </aside>
         </section>
     {% endfor %}

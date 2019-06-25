@@ -1,21 +1,27 @@
 ---
 intro:
-  background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %}
-    {{ site.personal-dark }} {% endif %}'
+  background: 
+    ace-iot: ace-iot-dark
+    personal: personal-dark
 sectionbreak:
-  background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %}
-    {{ site.personal-dark }} {% endif %}'
+  background:
+    ace-iot: ace-iot-dark
+    personal: personal-dark
 list:
-  background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %}
-    {{ site.personal-dark }} {% endif %}'
+  background:
+    ace-iot: ace-iot-dark
+    personal: personal-dark
 list-step:
-  background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-alt }} {% else %}
-    {{ site.personal-alt }} {% endif %}'
+  background:
+    ace-iot: ace-iot-alt
+    personal: personal-alt
 contact:
-  background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %}
-    {{ site.personal-dark }} {% endif %}'
+  background:
+    ace-iot: ace-iot-dark
+    personal: personal-dark
 image:
-  background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %}
-    {{ site.personal-dark }} {% endif %}'
+  background:
+    ace-iot: ace-iot-dark
+    personal: personal-dark
 ---
 
