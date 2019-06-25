@@ -1,4 +1,7 @@
 ---
+---
+
+---
 intro:
     background: '{% if page.theme == "ace-iot" %} {{ site.ace-iot-dark }} {% else %} {{ site.personal-dark }} {% endif %}'
 sectionbreak:
