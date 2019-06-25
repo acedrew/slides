@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <!-- homepage stylesheet logic -->
+    
+    <!-- theme stylesheet logic -->
+    
+        <link rel="stylesheet" href="/assets/personal-theme.css">
+    
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+        link.href = window.location.search.match( /print-pdf/gi ) ? "/assets/print/pdf.css" : "/assets/print/paper.css";
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+<body>
+
+        <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+<script src="/assets/js/reveal.js"></script>
+<script src="/assets/js/notes.js"></script>
+<script>
+Reveal.initialize({
+
+    // The "normal" size of the presentation, aspect ratio will be preserved
+	// when the presentation is scaled to fit different resolutions. Can be
+	// specified using percentage units.
+    // Default is 960 x 700
+	width: 1920,
+	height: 1080,
+    margin: 0,
+
+    // Vertical centering of slides
+	center: true,
+
+    // Display presentation control arrows
+    controls: false,
+
+    // Display a presentation progress bar
+    progress: false,
+
+    // Push each slide change to the browser history
+    history: true,
+
+    // Enable keyboard shortcuts for navigation
+    keyboard: true,
+
+    // Enable the slide overview mode
+    overview: true,
+
+    // Enables touch navigation on devices with touch input
+    touch: true,
+
+    // Loop the presentation
+    loop: false,
+
+    // Transition style
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+    // Transition speed
+    transitionSpeed: 'default', // default/fast/slow
+
+    // Transition style for full page slide backgrounds
+    backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+
+    // Number of slides away from the current that are visible
+    viewDistance: 3,
+
+    // The display mode that will be used to show slides
+    display: 'block',
+
+    // The maximum number of pages a single slide can expand onto when printing
+    // to PDF, unlimited by default
+    pdfMaxPagesPerSlide: 1
+
+});
+window.onload = function() {
+    var listHeaders = document.querySelectorAll(".list .list__title");
+    listHeaders.forEach(function(header) {
+        var headerLength = header.innerHTML.length;
+        var textSize = Math.max(345 - headerLength * 26, 90);
+        header.setAttribute("style", "font-size: " + textSize.toString() + "px");
+    });
+}
+
+</script>
+</body>
+</html>
