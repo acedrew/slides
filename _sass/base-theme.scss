@@ -53,6 +53,37 @@ body {
 }
 
 /////////////////////////
+// Single Slide with image
+/////////////////////////
+
+.slides .single-image {
+    img {
+        max-width: 50%;
+        max-height: 70%;
+        object-fit: contain;
+    }
+    img.center {
+            align-self: center;
+    }
+    img.left {
+            align-self: left;
+    }
+    img.right {
+            align-self: right;
+    }
+    padding: 0;
+}
+
+.single-image__title {
+    font-size: 270px;
+}
+
+.single-image__body {
+    font-size: $font-size-body;
+    padding: 0 200px;
+}
+
+/////////////////////////
 // Single Slide
 /////////////////////////
 
@@ -152,7 +183,7 @@ body {
     line-height: 1;
     text-align: left;
     align-self: center;
-    padding: 0 100px 0 0;
+    padding: 0 100px 0 25px;
 }
 
 .list__ul {

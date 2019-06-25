@@ -1,0 +1,13 @@
+{% if slide.title %}
+    <h1 class="single-image__title">{{ slide.title }}</h1>
+{% endif %}
+<p class="single-image__body">{{ slide.text | default: "slide.text" }}</p>
+{% if slide.img-bottom-right %}
+        <img class="right" src="/assets/img{{ slide.img-bottom-right }}">
+{% endif %}
+{% if slide.img-bottom-center %}
+        <img class="center" src="/assets/img{{ slide.img-bottom-center }}">
+{% endif %}
+{% if slide.img-bottom-left %}
+        <img class="left" src="/assets/img{{ slide.img-bottom-left }}">
+{% endif %}
