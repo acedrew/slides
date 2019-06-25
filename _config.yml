@@ -21,6 +21,7 @@ url: ''
 twitter_username: jekyllrb
 github_username: jekyll
 markdown: kramdown
+exclude: ["Gemfile.lock", "node_modules"]
 sass:
   sass_dir: _sass
   style: compressed
