@@ -1,5 +1,5 @@
 ---
-title: The Futue of IoT
+title: The Future of IoT
 layout: slideshow
 theme: ace-iot
 author: Andrew Rodgers

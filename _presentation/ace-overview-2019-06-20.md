@@ -71,14 +71,8 @@ slides:
     operational cost savings of ~$1M annually
 - format: single-split
   slide-transition: fade-in fade-out
-  title: Southern Company / Oak Ridge National Lab
-  text: Two residential neighborhoods deployed with load management and community
-    scale and distributed energy resources
-- format: single-split
-  slide-transition: fade-in fade-out
-  title: Provincial Electrical Authority Thailand
-  text: Piloting unified Smart Home implementation that utilizes VOLTTRON to coordinate
-    grid and distributed resources for optimum operation
+  title: Penn State University
+  text: 10 building pilot, planned to deploy to ~600 building portfolio to establish facilities data lake
 - format: single-split
   slide-transition: fade-in fade-out
   title: Data Analytics Companies, HVAC and Mechanical Service Providers
