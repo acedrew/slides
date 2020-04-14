@@ -12,31 +12,31 @@ slides:
   notes: Don't forget this is an intro
   footer: hidden
 - format: sectionbreak
-  title: "Hi, I'm Andrew"
+  title: Hi, I'm Andrew
 - format: single
-  title: "and I'm an artist"
+  title: and I'm an artist
   text: " "
 - format: single
   text: technologist
 - format: single
   text: photographer
 - format: sectionbreak
-  title: 'why am I here?'
+  title: why am I here?
 - format: single
   text: under socialized childhood
 - format: single
   text: crippling self-esteem issues
 - format: sectionbreak
-  title: 'but mostly'
+  title: but mostly
 - format: single
   text: imposter syndrome
 - format: single
   text: 'simple message:'
 - format: single
-  title: 'I am artist, and you can too'
+  title: I am artist, and you can too
   text: " "
 - format: sectionbreak
-  title: 'so what have I been up to?'
+  title: so what have I been up to?
 - format: image
   image: "/glitch-chajs/SummerRoadTrip.png"
   footer: hidden
@@ -90,16 +90,15 @@ slides:
 - format: image
   video: "/glitch-chajs/cag-video.mp4"
   footer: hidden
-
 - format: sectionbreak
-  title: "what I've learned:"
+  title: 'what I''ve learned:'
 - format: single
   text: sharing the things you create is a scary, vulnerable experience
 - format: single
   title: but it's worth it
   text: " "
 - format: sectionbreak
-  title: "to reiterate"
+  title: to reiterate
 - format: single
   text: if you want to make art, do it
 - format: single

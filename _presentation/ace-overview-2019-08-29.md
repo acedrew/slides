@@ -62,33 +62,6 @@ slides:
   title: VOLTTRON Value Proposition
   text: Commercial partners available for support, training and Infrastructure-as-a-Service
     (IaaS) resources
-    # - format: sectionbreak
-    #   title: Eclipse VOLTTRON Use Cases
-    # - format: single-split
-    #   slide-transition: slide-in fade-out
-    #   title: City of Washington D.C.
-    #   text: Unified building operations data platform, deployed across ~60 buildings enabling
-    #     operational cost savings of ~$1M annually
-    # - format: single-split
-    #   slide-transition: fade-in fade-out
-    #   title: Southern Company / Oak Ridge National Lab
-    #   text: Two residential neighborhoods deployed with load management and community
-    #     scale and distributed energy resources
-    # - format: single-split
-    #   slide-transition: fade-in fade-out
-    #   title: Provincial Electrical Authority Thailand
-    #   text: Piloting unified Smart Home implementation that utilizes VOLTTRON to coordinate
-    #     grid and distributed resources for optimum operation
-    # - format: single-split
-    #   slide-transition: fade-in fade-out
-    #   title: Data Analytics Companies, HVAC and Mechanical Service Providers
-    #   text: Using VOLTTRON as a universal data ingestion pipeline, allowing lower cost,
-    #     faster deployments
-    # - format: single-split
-    #   slide-transition: fade-in slide-out
-    #   title: Renewable Energy Companies
-    #   text: Developing value-added services with existing infrastructure on top of a tested
-    #     platform
 - format: list
   title: What VOLTTRON Delivers
   list:
@@ -100,7 +73,7 @@ slides:
   - Accessible, YOU can do this
   footer: hidden
 - format: sectionbreak
-  title: "ACE's role in the VOLTTRON Ecosystem:"
+  title: 'ACE''s role in the VOLTTRON Ecosystem:'
 - format: single
   text: ACE IoT Solutions offers comprehensive support for VOLTTRON deployments for
     a variety of use cases
@@ -110,13 +83,17 @@ slides:
   title: How we've been working to build the Eclipse VOLTTRON Ecosystem
   list:
   - Regular blog posts to feature VOLTTRON capabilities and ecosystem members
-  - Securing industry speaking opportunities to educate practitioners, for ACE and other ecosystem members
-  - Contributing to efforts to deliver a more end-to-end business value package built on the VOLTTRON core
+  - Securing industry speaking opportunities to educate practitioners, for ACE and
+    other ecosystem members
+  - Contributing to efforts to deliver a more end-to-end business value package built
+    on the VOLTTRON core
   - Recruiting new industries and companies to try VOLTTRON, with or without ACE support
-  - Collaborating on Security efforts with the Lab and its partners, we view this as a key feature and differentiating factor for VOLTTRON
+  - Collaborating on Security efforts with the Lab and its partners, we view this
+    as a key feature and differentiating factor for VOLTTRON
   footer: hidden
 - format: single
-  text: We believe that open-architecture, open-standard, open-interface systems are going to transform the energy industry, enabling a sustainable future
+  text: We believe that open-architecture, open-standard, open-interface systems are
+    going to transform the energy industry, enabling a sustainable future
 - format: single
   text: We want to help usher in that future, using VOLTTRON
 - format: single
