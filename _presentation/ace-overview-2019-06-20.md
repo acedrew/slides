@@ -72,7 +72,8 @@ slides:
 - format: single-split
   slide-transition: fade-in fade-out
   title: Penn State University
-  text: 10 building pilot, planned to deploy to ~600 building portfolio to establish facilities data lake
+  text: 10 building pilot, planned to deploy to ~600 building portfolio to establish
+    facilities data lake
 - format: single-split
   slide-transition: fade-in fade-out
   title: Data Analytics Companies, HVAC and Mechanical Service Providers

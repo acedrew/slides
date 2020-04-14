@@ -27,7 +27,7 @@ slides:
   text: We provide our customers with low cost approaches to acquire, access and manage
     data from distributed control systems and sensors.
 - format: image
-  image: "waldinger-2019-05-02/aiot-data-flow-diagram.png"
+  image: waldinger-2019-05-02/aiot-data-flow-diagram.png
   footer: hidden
 - format: sectionbreak
   title: 'intro: VOLTTRON™'
@@ -106,7 +106,8 @@ slides:
   text: ACE IoT Solutions offers comprehensive support for VOLTTRON deployments for
     a variety of use cases
 - format: single
-  text: We believe that open-architecture, open-standard, open-interface systems are going to transform the energy industry, enabling a sustainable future
+  text: We believe that open-architecture, open-standard, open-interface systems are
+    going to transform the energy industry, enabling a sustainable future
 - format: single
   text: We want to help usher in that future, using VOLTTRON
 - format: thanks
