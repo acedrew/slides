@@ -8,7 +8,7 @@ layout: default
     {% for slide in page.slides %}
         <section class="{{ slide.format }}"
                  {% if slide.image %}
-                     data-background-size="cover"
+                     data-background-size="{{ slide.background-size | default:'cover' }}"
                      data-background-size="no-repeat"
                      data-background-image="{{ "/assets/img/" | relative_url }}{{ slide.image }}"
                  {% endif %}
@@ -22,7 +22,7 @@ layout: default
                         data-background-color="{{ site[background-color-scheme] }}"
                  {% endif %}
                 {% if slide.video %}
-                         data-background-video="{{ "/assets/img/" | relative_url }}{{ slide.video }}"
+                        data-background-video-muted="muted" data-background-video="{{ "/assets/img/" | relative_url }}{{ slide.video }}"
                 {% endif %}
                  data-background-transition="{{ slide.background-transition | default:"fade" }}"
                  data-transition="{{ slide.slide-transition | default:"slide" }}"

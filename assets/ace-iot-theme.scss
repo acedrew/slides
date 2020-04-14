@@ -1,5 +1,3 @@
----
----
 
 /////////////////////////
 // Theme Variables
@@ -288,8 +286,16 @@ a {
 /////////////////////////
 
 .image__caption {
-    color: $white;
     font-weight: 700;
+    &.white {
+        color: $white;
+    }
+    &.green {
+        color: $green;
+    }
+    &   .purple {
+        color: $purple;
+    }
 }
 
 /////////////////////////
