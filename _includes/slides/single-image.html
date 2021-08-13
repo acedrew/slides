@@ -3,11 +3,11 @@
 {% endif %}
 <p class="single-image__body">{{ slide.text | default: "slide.text" }}</p>
 {% if slide.img-bottom-right %}
-        <img class="right" src="/assets/img{{ slide.img-bottom-right }}">
+        <img class="right" src="/assets/img{{ slide.img-bottom-right }}" style="{{ slide.img-style }}">
 {% endif %}
 {% if slide.img-bottom-center %}
-        <img class="center" src="/assets/img{{ slide.img-bottom-center }}">
+        <img class="center" src="/assets/img{{ slide.img-bottom-center }}" style="{{ slide.img-style }}">
 {% endif %}
 {% if slide.img-bottom-left %}
-        <img class="left" src="/assets/img{{ slide.img-bottom-left }}">
+        <img class="left" src="/assets/img{{ slide.img-bottom-left }}" style="{{ slide.img-style }}">
 {% endif %}
