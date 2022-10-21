@@ -39,10 +39,17 @@ body {
     text-align: left;
 }
 
+.intro__lower{
+    display: flex;
+    justify-content: space-between;
+}
 .intro__author {
     font-size: 30px;
 }
-
+.intro__venue {
+    font-size: 30px;
+    float: right;
+}
 /////////////////////////
 // Section Break Slide
 /////////////////////////
